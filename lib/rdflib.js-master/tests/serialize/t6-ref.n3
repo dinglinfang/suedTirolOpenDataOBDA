@@ -1,4 +1,0 @@
-@prefix : </t5.n3#>.
-
-:subj a :TestCase; = :other.
-
