@@ -1,4 +1,4 @@
-# Südtirol Open Data OBDA
+# A show case of OBDA using Südtirol Open Data 
 
 
 This project uses OBDA and Visual Analytics techniques to integrate and visualize open data in South Tyrol, in particular weather and traffic sensor measurements. It provides a visual interface for querying and visualizing the geospatial data.
