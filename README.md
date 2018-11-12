@@ -71,3 +71,7 @@ http://localhost:8000/index.html
 
 - Südtirol Open data portal: https://civis.bz.it/de/index.html
 - Ontop: http://ontop.inf.unibz.it
+
+## Contact
+
+- Linfang Ding: linfang.ding@unibz.it
