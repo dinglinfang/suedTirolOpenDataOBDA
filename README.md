@@ -14,17 +14,23 @@ $ git clone https://github.com/dinglinfang/suedTirolOpenDataOBDA.git
 
 ### Setup database
 
+  Assume that you have already installed PostgreSQL and the PostGIS extension.
+
   Import the test data in the [data](data) directory into a PostgreSQL database.
 
 ```
 $ cd data
 $ unzip suedtirol.sql.zip
-$ psql -U <username> -d <myDataBase> -a -f suedtirol.sql
+$ psql -U <username> 
+# CREATE DATABASE suedtirol;
+# \c sueditorl
+# CREATE EXTENSION postgis;
+# \i suedtirol.sql
 ```
 
 ### Configure the connection
 
-  Modify the connection information in [obda/suedtirol.properties](obda/suedtirol.properties)
+  Modify the connection information in [obda/suedtirol.properties](obda/suedtirol.properties) if necessary.
 
 ### Install Ontop/Tomcat
 
@@ -41,9 +47,9 @@ $ psql -U <username> -d <myDataBase> -a -f suedtirol.sql
 	* On Mac/Linux: using the terminal run `sh catalina.sh run`.
 	* On Windows: click on the executable `startup.bat`.
 5. Connect to RDF4J Workbench at http://localhost:8080/rdf4j-workbench/ .
-6. You will be automatically redirected to the repositories view .
+6. You will be automatically redirected to the repositories view.
 
-## Setting up a Ontop Virtual RDF Repository using the RDF4J Workbench
+### Setting up a Ontop Virtual RDF Repository using the RDF4J Workbench
 
 1. Click on *New repository*
   * Select *Ontop Virtual RDF Store* from the list.
