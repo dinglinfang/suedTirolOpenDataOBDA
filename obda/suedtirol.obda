@@ -17,9 +17,9 @@ terms:		http://purl.org/dc/terms/
 schema:		http://schema.org/
 
 [MappingDeclaration] @collection [[
-mappingId	municipality_geom
-target		:municipality/municipality={istat_code} :hasGeometryInWKT {wkt}^^xsd:string . 
-source		SELECT istat_code, ST_AsText(geom) AS wkt FROM municipalities
+mappingId      municipality_geom
+target         :municipality/municipality={istat_code} :hasGeometryInWKT {wkt}^^xsd:string .
+source         SELECT istat_code, ST_AsText(geom) AS wkt FROM municipalities
 
 mappingId	municipality
 target		:municipality/municipality={istat_code} a :Municipality ; rdfs:label {name_i}@it , {name_d}@de ; :hasIStatCode {istat_code}^^xsd:integer . 
