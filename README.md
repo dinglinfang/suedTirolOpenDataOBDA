@@ -36,32 +36,18 @@ $ psql -U <username>
 
   Deploy the a Ontop SPARQL endpoint using the files in the [obda](obda) directory. 
   
-1. Download and unzip the Tomcat bundle [ontop-tomcat-bundle.zip](https://sourceforge.net/projects/ontop4obda/files/ontop-3.0.0-beta-2/)
-2. Enable CORS of the rdf4j-server configureation. There are two place  to be modified in the file `$TOMCAT_HOME/webapps/rdf4j-server/WEB-INF/web.xml`. These places are with the following xml comments:
-```xml
-  <!-- Uncomment this and the associated filter-mapping to enable cross-origin requests. -->
-  <!-- Uncomment this and the associated filter definition to enable cross-origin requests. -->
-```    
-3. Copy the jdbc driver of PostgreSQL (https://jdbc.postgresql.org/download.html) to the `lib` directory of tomcat  
-4. Start tomcat from the *bin folder* using the commands: 
-	* On Mac/Linux: using the terminal run `sh catalina.sh run`.
-	* On Windows: click on the executable `startup.bat`.
-5. Connect to RDF4J Workbench at http://localhost:8080/rdf4j-workbench/ .
-6. You will be automatically redirected to the repositories view.
 
-### Setting up a Ontop Virtual RDF Repository using the RDF4J Workbench
+1. Download and unzip the Ontop CLI bundle [ontop-cli-4.0.0-beta-1.zip](https://sourceforge.net/projects/ontop4obda/files/ontop-4.0.0-beta-1/)
 
-1. Click on *New repository*
-  * Select *Ontop Virtual RDF Store* from the list.
-  * Give an ID to your new repository (ex: `suedtirol`).
-  * Give optionally also a descriptive title.
-  * Click on *Next*.
+2. Copy the jdbc driver of PostgreSQL (https://jdbc.postgresql.org/download.html) to the `lib` directory of tomcat
 
-2. On the next page:
-  * Type in the path of the ontology, mapping, and properties files in the [obda](obda) directory.
-  * For example,  the ontology path looks like `C:/Users/Me/path/to/obda/suedtirol.owl`) on windows or `/Users/Me/path/to/obda/suedtirol.owl`) on Mac.
-  * Keep the default options.
-  * Click on *Create*.
+3. Start the Ontop Endpoint
+
+```
+$  ~/opt/ontop-cli-4.0.0-beta-1/ontop endpoint --cors-allowed-origins=* -t suedtirol.owl -p suedtirol.properties -m suedtirol.obda  
+```
+
+
 
 ### Start the web server for our app
 

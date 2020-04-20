@@ -17,8 +17,8 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2">
-<!--         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/> -->
-<!--         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/> -->
+        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
     </owl:Ontology>
 
 
