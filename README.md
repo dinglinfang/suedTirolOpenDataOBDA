@@ -34,20 +34,18 @@ $ psql -U <username>
 
 ### Install Ontop/Tomcat
 
-  Deploy the a Ontop SPARQL endpoint using the files in the [obda](obda) directory. 
+  Deploy the Ontop SPARQL endpoint using the files in the [obda](obda) directory. 
   
 
 1. Download and unzip the Ontop CLI bundle [ontop-cli-4.0.0-beta-1.zip](https://sourceforge.net/projects/ontop4obda/files/ontop-4.0.0-beta-1/)
 
 2. Copy the jdbc driver of PostgreSQL (https://jdbc.postgresql.org/download.html) to the `lib` directory of tomcat
 
-3. Start the Ontop Endpoint
+3. Start the Ontop endpoint
 
 ```
-$  ~/opt/ontop-cli-4.0.0-beta-1/ontop endpoint --cors-allowed-origins=* -t suedtirol.owl -p suedtirol.properties -m suedtirol.obda  
+$  ~/opt/ontop-cli-4.0.0-beta-1/ontop endpoint --cors-allowed-origins='*' -t suedtirol.owl -p suedtirol.properties -m suedtirol.obda  
 ```
-
-
 
 ### Start the web server for our app
 
@@ -62,7 +60,7 @@ http://localhost:8000/index.html
 ## Links:
 
 - Südtirol Open data portal: https://civis.bz.it/de/index.html
-- Ontop: http://ontop.inf.unibz.it
+- Ontop: https://ontop-vkg.org
 
 ## Contact
 
