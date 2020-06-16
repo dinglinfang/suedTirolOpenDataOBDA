@@ -2,6 +2,8 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://purl.org/dc/elements/1.1/" uri="library/dublin_core_elements.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1591972836960" name="duplicate:http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2" uri="suedtirol.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591985336461" name="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2" uri="suedtirol.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591985336461" name="http://www.semanticweb.org/xiao/ontologies/2020/5/suedtirol" uri="suedtirol_merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591985336461" name="shadowed:http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2" uri="library/suedtirol.owl"/>
     </group>
 </catalog>
