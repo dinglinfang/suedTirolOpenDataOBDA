@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link href="../lib/vis/vis-network.min.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div id="query" style="width: 800px; height: 600px">
+
+</div>
+
+<script type="text/javascript" src="../lib/vis/vis.js"></script>
+
+<script src="../lib/lodash/lodash.js"></script>
+<script src="../lib/sparqljs/SparqlParser.js"></script>
+<script src="sparql_vis.js"></script>
+<script>
+    q = `PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obda: <https://w3id.org/obda/vocabulary#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX terms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?pName ?v ?t ?prop  WHERE {
+  ?m a  :Municipality .
+  ?m rdfs:label 'Bolzano'@it.
+  #?m  :hasGeometryInWKT ?mWkt .
+  ?s a sosa:Sensor .
+  ?s sosa:isHostedBy ?p.
+  ?p rdfs:label ?pName .
+  ?p geo:within ?m . ## <- unsupported yet
+  #?p geo:defaultGeometry ?g . ?g geo:asWKT ?pWkt .
+  ?s sosa:madeObservation ?o .
+  ?o  sosa:observedProperty ?prop .
+  ?o sosa:hasSimpleResult ?v . ?o sosa:resultTime ?t .
+  FILTER (?t >= '2017-01-01T00:00:00'^^xsd:dateTime)
+  FILTER (?t <= '2017-01-31T00:00:00'^^xsd:dateTime)
+  FILTER (LANG(?pName)='it')
+  FILTER (geof:sfWithin(?pWkt, ?mWkt))
+}`
+    drawSparqlGraph(q, document.getElementById('query'))
+</script>
+</body>
+</html>

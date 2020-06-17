@@ -4,6 +4,9 @@ class SPARQLClient {
     }
 
     execute(sparql) {
+
+        console.log(sparql);
+
         const requestBody = "query=" + encodeURIComponent(sparql) +
             "&Accept=" + encodeURIComponent('application/sparql-results+json');
 
