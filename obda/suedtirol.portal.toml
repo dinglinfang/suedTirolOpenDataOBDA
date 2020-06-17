@@ -1,21 +1,14 @@
-<html>
-<head>
-    <link href="../lib/vis/vis-network.min.css" rel="stylesheet" type="text/css"/>
-</head>
+title="Sued Tirol Open Data Analysis"
 
-<body>
+[[tabGroups]]
 
-<div id="query" style="width: 800px; height: 600px">
+name="Sensor Analysis"
 
-</div>
+[[tabGroups.tabs]]
 
-<script type="text/javascript" src="../lib/vis/vis.js"></script>
-
-<script src="../lib/lodash/lodash.js"></script>
-<script src="../lib/sparqljs/SparqlParser.js"></script>
-<script src="sparql_vis.js"></script>
-<script>
-    q = `PREFIX : <http://ex.org/suedtirol#>
+name="sensors in Bolanoz and their observations"
+query="""
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -36,21 +29,17 @@ PREFIX schema: <http://schema.org/>
 SELECT ?pName ?v ?t ?prop  WHERE {
   ?m a  :Municipality .
   ?m rdfs:label 'Bolzano'@it.
-  #?m  :hasGeometryInWKT ?mWkt .
+  ?m  :hasGeometryInWKT ?mWkt .
   ?s a sosa:Sensor .
   ?s sosa:isHostedBy ?p.
   ?p rdfs:label ?pName .
-  ?p geo:within ?m . ## <- unsupported yet
-  #?p geo:defaultGeometry ?g . ?g geo:asWKT ?pWkt .
+  ?p geo:defaultGeometry ?g . ?g geo:asWKT ?pWkt .
+  FILTER (LANG(?pName)='it')
+  FILTER (geof:sfWithin(?pWkt, ?mWkt))
   ?s sosa:madeObservation ?o .
-  ?o  sosa:observedProperty ?prop .
+  ?o sosa:observedProperty ?prop .
   ?o sosa:hasSimpleResult ?v . ?o sosa:resultTime ?t .
   FILTER (?t >= '2017-01-01T00:00:00'^^xsd:dateTime)
   FILTER (?t <= '2017-01-31T00:00:00'^^xsd:dateTime)
-  FILTER (LANG(?pName)='it')
-  FILTER (geof:sfWithin(?pWkt, ?mWkt))
-}`
-    drawSparqlGraph(q, document.getElementById('query'))
-</script>
-</body>
-</html>
+}
+"""

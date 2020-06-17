@@ -57,10 +57,10 @@
         <rdfs:seeAlso rdf:resource="https://www.w3.org/2015/spatial/wiki/Semantic_Sensor_Network_Ontology"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGC GeoSPARQL 1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -68,7 +68,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
@@ -81,7 +81,7 @@
         <rdfs:label xml:lang="en">Contributor</rdfs:label>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
@@ -94,7 +94,7 @@
         <rdfs:label xml:lang="en">Creator</rdfs:label>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
@@ -107,7 +107,7 @@
         <rdfs:label xml:lang="en">Date</rdfs:label>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
@@ -120,7 +120,7 @@
         <rdfs:label xml:lang="en">Description</rdfs:label>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/source -->
@@ -133,91 +133,91 @@
         <rdfs:label xml:lang="en">Source</rdfs:label>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
+
 
 
     <!-- http://schema.org/domainIncludes -->
 
     <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
-    
+
 
 
     <!-- http://schema.org/rangeIncludes -->
 
     <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
@@ -231,7 +231,7 @@
         <skos:example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</skos:example>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
@@ -242,7 +242,7 @@
         <skos:definition xml:lang="en">A note about a modification to a concept.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
@@ -253,7 +253,7 @@
         <skos:definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
@@ -264,7 +264,7 @@
         <skos:definition xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
@@ -275,7 +275,7 @@
         <skos:definition xml:lang="en">An example of the use of a concept.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
@@ -288,7 +288,7 @@
         <skos:definition xml:lang="en">A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
@@ -299,7 +299,7 @@
         <skos:definition xml:lang="en">A note about the past state/use/meaning of a concept.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#note -->
@@ -310,7 +310,7 @@
         <skos:definition xml:lang="en">A general note, for any purpose.</skos:definition>
         <skos:scopeNote xml:lang="en">This property may be used directly, or as a super-property for more specific note types.</skos:scopeNote>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
@@ -325,7 +325,7 @@
         <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
@@ -336,16 +336,16 @@
         <skos:definition xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -353,7 +353,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#gmlLiteral -->
@@ -376,7 +376,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">GML Literal</skos:prefLabel>
     </rdfs:Datatype>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#wktLiteral -->
@@ -399,16 +399,16 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">Well-known Text Literal</skos:prefLabel>
     </rdfs:Datatype>
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -416,7 +416,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#defaultGeometry -->
@@ -445,7 +445,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">defaultGeometry</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehContains -->
@@ -457,23 +457,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: T*TFF*FF*
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: T*TFF*FF*
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">contains</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: T*TFF*FF*
     </skos:definition>
         <skos:prefLabel xml:lang="en">contains</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehCoveredBy -->
@@ -485,23 +485,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is spatially covered 
+      Exists if the subject SpatialObject is spatially covered
       by the object SpatialObject. DE-9IM: TFF*TFT**
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is spatially covered 
+      Exists if the subject SpatialObject is spatially covered
       by the object SpatialObject. DE-9IM: TFF*TFT**
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">coveredBy</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is spatially covered 
+      Exists if the subject SpatialObject is spatially covered
       by the object SpatialObject. DE-9IM: TFF*TFT**
     </skos:definition>
         <skos:prefLabel xml:lang="en">coveredBy</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehCovers -->
@@ -513,23 +513,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially covers the 
+      Exists if the subject SpatialObject spatially covers the
       object SpatialObject. DE-9IM: T*TFT*FF*
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially covers the 
+      Exists if the subject SpatialObject spatially covers the
       object SpatialObject. DE-9IM: T*TFT*FF*
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">covers</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially covers the 
+      Exists if the subject SpatialObject spatially covers the
       object SpatialObject. DE-9IM: T*TFT*FF*
     </skos:definition>
         <skos:prefLabel xml:lang="en">covers</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehDisjoint -->
@@ -557,7 +557,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">disjoint</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehEquals -->
@@ -569,23 +569,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">equals</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </skos:definition>
         <skos:prefLabel xml:lang="en">equals</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehInside -->
@@ -597,23 +597,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is spatially inside 
+      Exists if the subject SpatialObject is spatially inside
       the object SpatialObject. DE-9IM: TFF*FFT**
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is spatially inside 
+      Exists if the subject SpatialObject is spatially inside
       the object SpatialObject. DE-9IM: TFF*FFT**
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">inside</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is spatially inside 
+      Exists if the subject SpatialObject is spatially inside
       the object SpatialObject. DE-9IM: TFF*FFT**
     </skos:definition>
         <skos:prefLabel xml:lang="en">inside</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehMeet -->
@@ -625,26 +625,26 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially meets the 
-      object SpatialObject. 
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject.
       DE-9IM: FT******* ^ F**T***** ^ F***T****
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially meets the 
-      object SpatialObject. 
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject.
       DE-9IM: FT******* ^ F**T***** ^ F***T****
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">meet</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially meets the 
-      object SpatialObject. 
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject.
       DE-9IM: FT******* ^ F**T***** ^ F***T****
     </skos:definition>
         <skos:prefLabel xml:lang="en">meet</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#ehOverlap -->
@@ -656,23 +656,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
+      Exists if the subject SpatialObject spatially overlaps the
       object SpatialObject. DE-9IM: T*T***T**
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
+      Exists if the subject SpatialObject spatially overlaps the
       object SpatialObject. DE-9IM: T*T***T**
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">overlap</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
+      Exists if the subject SpatialObject spatially overlaps the
       object SpatialObject. DE-9IM: T*T***T**
     </skos:definition>
         <skos:prefLabel xml:lang="en">overlap</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
@@ -697,7 +697,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">hasGeometry</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8dc -->
@@ -725,7 +725,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">disconnected</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8ec -->
@@ -737,23 +737,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially meets the 
+      Exists if the subject SpatialObject spatially meets the
       object SpatialObject. DE-9IM: FFTFTTTTT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially meets the 
+      Exists if the subject SpatialObject spatially meets the
       object SpatialObject. DE-9IM: FFTFTTTTT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">externally connected</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially meets the 
+      Exists if the subject SpatialObject spatially meets the
       object SpatialObject. DE-9IM: FFTFTTTTT
     </skos:definition>
         <skos:prefLabel xml:lang="en">externally connected</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8eq -->
@@ -765,23 +765,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">equals</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </skos:definition>
         <skos:prefLabel xml:lang="en">equals</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8ntpp -->
@@ -793,23 +793,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is spatially inside 
+      Exists if the subject SpatialObject is spatially inside
       the object SpatialObject. DE-9IM: TFFTFFTTT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is spatially inside 
+      Exists if the subject SpatialObject is spatially inside
       the object SpatialObject. DE-9IM: TFFTFFTTT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">non-tangential proper part</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is spatially inside 
+      Exists if the subject SpatialObject is spatially inside
       the object SpatialObject. DE-9IM: TFFTFFTTT
     </skos:definition>
         <skos:prefLabel xml:lang="en">non-tangential proper part</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8ntppi -->
@@ -821,23 +821,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: TTTFFTFFT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: TTTFFTFFT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">non-tangential proper part inverse</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: TTTFFTFFT
     </skos:definition>
         <skos:prefLabel xml:lang="en">non-tangential proper part inverse</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8po -->
@@ -849,23 +849,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
+      Exists if the subject SpatialObject spatially overlaps the
       object SpatialObject. DE-9IM: TTTTTTTTT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
+      Exists if the subject SpatialObject spatially overlaps the
       object SpatialObject. DE-9IM: TTTTTTTTT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">partially overlapping</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
+      Exists if the subject SpatialObject spatially overlaps the
       object SpatialObject. DE-9IM: TTTTTTTTT
     </skos:definition>
         <skos:prefLabel xml:lang="en">partially overlapping</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8tpp -->
@@ -877,23 +877,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is spatially covered 
+      Exists if the subject SpatialObject is spatially covered
       by the object SpatialObject. DE-9IM: TFFTTFTTT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is spatially covered 
+      Exists if the subject SpatialObject is spatially covered
       by the object SpatialObject. DE-9IM: TFFTTFTTT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">tangential proper part</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is spatially covered 
+      Exists if the subject SpatialObject is spatially covered
       by the object SpatialObject. DE-9IM: TFFTTFTTT
     </skos:definition>
         <skos:prefLabel xml:lang="en">tangential proper part</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8tppi -->
@@ -905,23 +905,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially covers the 
+      Exists if the subject SpatialObject spatially covers the
       object SpatialObject. DE-9IM: TTTFTTFFT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially covers the 
+      Exists if the subject SpatialObject spatially covers the
       object SpatialObject. DE-9IM: TTTFTTFFT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">tangential proper part inverse</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially covers the 
+      Exists if the subject SpatialObject spatially covers the
       object SpatialObject. DE-9IM: TTTFTTFFT
     </skos:definition>
         <skos:prefLabel xml:lang="en">tangential proper part inverse</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfContains -->
@@ -933,23 +933,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: T*****FF*
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: T*****FF*
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">contains</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially contains the 
+      Exists if the subject SpatialObject spatially contains the
       object SpatialObject. DE-9IM: T*****FF*
     </skos:definition>
         <skos:prefLabel xml:lang="en">contains</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfCrosses -->
@@ -961,23 +961,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially crosses the 
+      Exists if the subject SpatialObject spatially crosses the
       object SpatialObject. DE-9IM: T*T******
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially crosses the 
+      Exists if the subject SpatialObject spatially crosses the
       object SpatialObject. DE-9IM: T*T******
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">crosses</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially crosses the 
+      Exists if the subject SpatialObject spatially crosses the
       object SpatialObject. DE-9IM: T*T******
     </skos:definition>
         <skos:prefLabel xml:lang="en">crosses</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfDisjoint -->
@@ -989,23 +989,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is spatially disjoint 
+      Exists if the subject SpatialObject is spatially disjoint
       from the object SpatialObject. DE-9IM: FF*FF****
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is spatially disjoint 
+      Exists if the subject SpatialObject is spatially disjoint
       from the object SpatialObject. DE-9IM: FF*FF****
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">disjoint</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is spatially disjoint 
+      Exists if the subject SpatialObject is spatially disjoint
       from the object SpatialObject. DE-9IM: FF*FF****
     </skos:definition>
         <skos:prefLabel xml:lang="en">disjoint</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfEquals -->
@@ -1017,23 +1017,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">equals</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially equals the 
+      Exists if the subject SpatialObject spatially equals the
       object SpatialObject. DE-9IM: TFFFTFFFT
     </skos:definition>
         <skos:prefLabel xml:lang="en">equals</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfIntersects -->
@@ -1045,26 +1045,26 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is not spatially disjoint 
+      Exists if the subject SpatialObject is not spatially disjoint
       from the object SpatialObject.
-      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** 
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is not spatially disjoint 
+      Exists if the subject SpatialObject is not spatially disjoint
       from the object SpatialObject.
-      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** 
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">intersects</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is not spatially disjoint 
+      Exists if the subject SpatialObject is not spatially disjoint
       from the object SpatialObject.
-      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** 
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****
     </skos:definition>
         <skos:prefLabel xml:lang="en">intersects</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfOverlaps -->
@@ -1076,23 +1076,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
-      object SpatialObject. DE-9IM: T*T***T** 
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
-      object SpatialObject. DE-9IM: T*T***T** 
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially overlaps the 
-      object SpatialObject. DE-9IM: T*T***T** 
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
     </skos:definition>
         <skos:prefLabel xml:lang="en">overlaps</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfTouches -->
@@ -1104,12 +1104,12 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject spatially touches the 
+      Exists if the subject SpatialObject spatially touches the
       object SpatialObject.
       DE-9IM: FT******* ^ F**T***** ^ F***T****
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject spatially touches the 
+      Exists if the subject SpatialObject spatially touches the
       object SpatialObject.
       DE-9IM: FT******* ^ F**T***** ^ F***T****
     </rdfs:comment>
@@ -1117,13 +1117,13 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">touches</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject spatially touches the 
+      Exists if the subject SpatialObject spatially touches the
       object SpatialObject.
       DE-9IM: FT******* ^ F**T***** ^ F***T****
     </skos:definition>
         <skos:prefLabel xml:lang="en">touches</skos:prefLabel>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
@@ -1135,53 +1135,53 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      Exists if the subject SpatialObject is spatially within the 
+      Exists if the subject SpatialObject is spatially within the
       object SpatialObject. DE-9IM: T*F**F***
     </dc:description>
         <rdfs:comment xml:lang="en">
-      Exists if the subject SpatialObject is spatially within the 
+      Exists if the subject SpatialObject is spatially within the
       object SpatialObject. DE-9IM: T*F**F***
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">within</rdfs:label>
         <skos:definition xml:lang="en">
-      Exists if the subject SpatialObject is spatially within the 
+      Exists if the subject SpatialObject is spatially within the
       object SpatialObject. DE-9IM: T*F**F***
     </skos:definition>
         <skos:prefLabel xml:lang="en">within</skos:prefLabel>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToFrazione -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToFrazione"/>
-    
+    <!-- http://ex.org/suedtirol#belongsToFrazione -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToMunicipality -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToMunicipality"/>
-    
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#belongsToFrazione"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasAddress -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasAddress"/>
-    
+    <!-- http://ex.org/suedtirol#belongsToMunicipality -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreet -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreet"/>
-    
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#belongsToMunicipality"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#locatesInGrid -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#locatesInGrid"/>
-    
+    <!-- http://ex.org/suedtirol#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#hasAddress"/>
+
+
+
+    <!-- http://ex.org/suedtirol#hasStreet -->
+
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#hasStreet"/>
+
+
+
+    <!-- http://ex.org/suedtirol#locatesInGrid -->
+
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#locatesInGrid"/>
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
@@ -1194,7 +1194,7 @@
         <rdfs:label xml:lang="en">has broader match</rdfs:label>
         <skos:definition xml:lang="en">skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#broader -->
@@ -1208,7 +1208,7 @@
         <skos:definition xml:lang="en">Relates a concept to a concept that is more general in meaning.</skos:definition>
         <skos:scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
@@ -1222,7 +1222,7 @@
         <skos:definition>skos:broaderTransitive is a transitive superproperty of skos:broader.</skos:definition>
         <skos:scopeNote xml:lang="en">By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
@@ -1234,7 +1234,7 @@
         <rdfs:label xml:lang="en">has close match</rdfs:label>
         <skos:definition xml:lang="en">skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
@@ -1248,7 +1248,7 @@
         <rdfs:label xml:lang="en">has exact match</rdfs:label>
         <skos:definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
@@ -1261,7 +1261,7 @@
         <rdfs:label xml:lang="en">has top concept</rdfs:label>
         <skos:definition xml:lang="en">Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
@@ -1273,7 +1273,7 @@
         <skos:definition xml:lang="en">Relates a resource (for example a concept) to a concept scheme in which it is included.</skos:definition>
         <skos:scopeNote xml:lang="en">A concept may be a member of more than one concept scheme.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
@@ -1285,7 +1285,7 @@
         <rdfs:label xml:lang="en">is in mapping relation with</rdfs:label>
         <skos:definition xml:lang="en">Relates two concepts coming, by convention, from different schemes, and that have comparable meanings</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#member -->
@@ -1304,7 +1304,7 @@
         <rdfs:label xml:lang="en">has member</rdfs:label>
         <skos:definition xml:lang="en">Relates a collection to one of its members.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#memberList -->
@@ -1319,7 +1319,7 @@
         <rdfs:label xml:lang="en">has member list</rdfs:label>
         <skos:definition xml:lang="en">Relates an ordered collection to the RDF list containing its members.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
@@ -1331,7 +1331,7 @@
         <rdfs:label xml:lang="en">has narrower match</rdfs:label>
         <skos:definition xml:lang="en">skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#narrower -->
@@ -1344,7 +1344,7 @@
         <skos:definition xml:lang="en">Relates a concept to a concept that is more specific in meaning.</skos:definition>
         <skos:scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
@@ -1357,7 +1357,7 @@
         <skos:definition>skos:narrowerTransitive is a transitive superproperty of skos:narrower.</skos:definition>
         <skos:scopeNote xml:lang="en">By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#related -->
@@ -1370,7 +1370,7 @@
         <rdfs:label xml:lang="en">has related</rdfs:label>
         <skos:definition xml:lang="en">Relates a concept to a concept with which there is an associative semantic relationship.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
@@ -1383,7 +1383,7 @@
         <rdfs:label xml:lang="en">has related match</rdfs:label>
         <skos:definition xml:lang="en">skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
@@ -1396,7 +1396,7 @@
         <skos:definition xml:lang="en">Links a concept to a concept related by meaning.</skos:definition>
         <skos:scopeNote xml:lang="en">This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
@@ -1409,7 +1409,7 @@
         <rdfs:label xml:lang="en">is top concept in scheme</rdfs:label>
         <skos:definition xml:lang="en">Relates a concept to the concept scheme that it is a top level concept of.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/actsOnProperty -->
@@ -1424,7 +1424,7 @@
         <skos:definition xml:lang="en">Relation between an Actuation and the property of a FeatureOfInterest it is acting upon.</skos:definition>
         <skos:example xml:lang="en">In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. </skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
@@ -1442,7 +1442,7 @@
         <skos:definition xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</skos:definition>
         <skos:example xml:lang="en">For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.</skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/hasResult -->
@@ -1459,7 +1459,7 @@
         <rdfs:label xml:lang="en">has result</rdfs:label>
         <skos:definition xml:lang="en">Relation linking an Observation or Actuation or act of Sampling and a Result or Sample.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/hasSample -->
@@ -1474,7 +1474,7 @@
         <rdfs:label xml:lang="en">has sample</rdfs:label>
         <skos:definition xml:lang="en">Relation between a FeatureOfInterest and the Sample used to represent it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/hosts -->
@@ -1495,7 +1495,7 @@
         <rdfs:label xml:lang="en">hosts</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/isActedOnBy -->
@@ -1509,7 +1509,7 @@
         <skos:definition xml:lang="en">Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state.</skos:definition>
         <skos:example xml:lang="en">In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. </skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/isFeatureOfInterestOf -->
@@ -1525,7 +1525,7 @@
         <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
         <skos:definition xml:lang="en">A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/isHostedBy -->
@@ -1541,7 +1541,7 @@
         <rdfs:label xml:lang="en">is hosted by</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/isObservedBy -->
@@ -1555,7 +1555,7 @@
         <rdfs:label xml:lang="en">is observed by</rdfs:label>
         <skos:definition xml:lang="en">Relation between an ObservableProperty and the Sensor able to observe it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/isResultOf -->
@@ -1571,7 +1571,7 @@
         <rdfs:label xml:lang="en">is result of</rdfs:label>
         <skos:definition xml:lang="en">Relation linking a Result to the Observation or Actuation or act of Sampling that created or caused it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/isSampleOf -->
@@ -1585,7 +1585,7 @@
         <rdfs:label xml:lang="en">is sample of</rdfs:label>
         <skos:definition xml:lang="en">Relation from a Sample to the FeatureOfInterest that it is intended to be representative of.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/madeActuation -->
@@ -1599,7 +1599,7 @@
         <rdfs:label xml:lang="en">made actuation</rdfs:label>
         <skos:definition xml:lang="en">Relation between an Actuator and the Actuation it has made.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/madeByActuator -->
@@ -1612,7 +1612,7 @@
         <rdfs:label xml:lang="en">made by actuator</rdfs:label>
         <skos:definition xml:lang="en">Relation linking an Actuation to the Actuator that made that Actuation.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/madeBySampler -->
@@ -1626,7 +1626,7 @@
         <rdfs:label xml:lang="en">made by sampler</rdfs:label>
         <skos:definition xml:lang="en">Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/madeBySensor -->
@@ -1640,7 +1640,7 @@
         <rdfs:label xml:lang="en">made by sensor</rdfs:label>
         <skos:definition xml:lang="en">Relation between an Observation and the Sensor which made the Observation.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/madeObservation -->
@@ -1653,7 +1653,7 @@
         <rdfs:label xml:lang="en">made observation</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Sensor and an Observation made by the Sensor.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/madeSampling -->
@@ -1666,7 +1666,7 @@
         <rdfs:label xml:lang="en">made sampling</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Sampler (sampling device or entity) and the Sampling act it performed.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/observedProperty -->
@@ -1679,7 +1679,7 @@
         <rdfs:label xml:lang="en">observed property</rdfs:label>
         <skos:definition xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/observes -->
@@ -1693,7 +1693,7 @@
         <rdfs:label xml:lang="en">observes</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/phenomenonTime -->
@@ -1708,7 +1708,7 @@
         <rdfs:label xml:lang="en">phenomenon time</rdfs:label>
         <skos:definition xml:lang="en">The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/usedProcedure -->
@@ -1735,7 +1735,7 @@
         <rdfs:label xml:lang="en">used procedure</rdfs:label>
         <skos:definition xml:lang="en">A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/deployedOnPlatform -->
@@ -1747,7 +1747,7 @@
         <rdfs:label xml:lang="en">deployed on platform</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Deployment and the Platform on which the Systems are deployed.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/deployedSystem -->
@@ -1759,7 +1759,7 @@
         <rdfs:label xml:lang="en">deployed system</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Deployment and a deployed System.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/detects -->
@@ -1770,7 +1770,7 @@
         <rdfs:label xml:lang="en">detects</rdfs:label>
         <skos:definition xml:lang="en">A relation from a Sensor to the Stimulus that the Sensor detects. The Stimulus itself will be serving as a proxy for some ObservableProperty.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/forProperty -->
@@ -1782,7 +1782,7 @@
         <skos:definition xml:lang="en">A relation between some aspect of an entity and a Property.</skos:definition>
         <skos:example xml:lang="en">For example, from a Sensor to the properties it can observe; from an Actuator to the properties it can act on; from a Deployment to the properties it was installed to observe or act on; from a SystemCapability to the Property the capability is described for.</skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/hasDeployment -->
@@ -1793,7 +1793,7 @@
         <rdfs:label xml:lang="en">has deployment</rdfs:label>
         <skos:definition xml:lang="en">Relation between a System and a Deployment, recording that the System is deployed in that Deployment.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/hasInput -->
@@ -1804,7 +1804,7 @@
         <rdfs:label xml:lang="en">has input</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Procedure and an Input to it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/hasOutput -->
@@ -1815,7 +1815,7 @@
         <rdfs:label xml:lang="en">has output</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Procedure and an Output of it.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/hasProperty -->
@@ -1827,7 +1827,7 @@
         <rdfs:label xml:lang="en">has property</rdfs:label>
         <skos:definition xml:lang="en">Relation between an entity and a Property of that entity.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/hasSubSystem -->
@@ -1838,7 +1838,7 @@
         <rdfs:label xml:lang="en">has subsystem</rdfs:label>
         <skos:definition xml:lang="en">Relation between a System and its component parts.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/implementedBy -->
@@ -1851,7 +1851,7 @@
         <skos:definition xml:lang="en">Relation between a Procedure (an algorithm, procedure or method) and an entity that implements that Procedure in some executable way.</skos:definition>
         <skos:example xml:lang="en">For example, the relationship between a scientific measuring Procedure and a sensor that senses via that Procedure.</skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/implements -->
@@ -1863,7 +1863,7 @@
         <skos:definition xml:lang="en">Relation between an entity that implements a Procedure in some executable way and the Procedure (an algorithm, procedure or method).</skos:definition>
         <skos:example xml:lang="en">For example, the relationship between a sensor and the scientific measuring Procedure via which it senses.</skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/inDeployment -->
@@ -1875,7 +1875,7 @@
         <skos:definition xml:lang="en">Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform.</skos:definition>
         <skos:example xml:lang="en">For example, a relation between a buoy and a deployment of several Sensors.</skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/isPropertyOf -->
@@ -1886,7 +1886,7 @@
         <rdfs:label xml:lang="en">is property of</rdfs:label>
         <skos:definition xml:lang="en">Relation between a Property and the entity it belongs to.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/isProxyFor -->
@@ -1898,7 +1898,7 @@
         <skos:definition xml:lang="en">A relation from a Stimulus to the Property that the Stimulus is serving as a proxy for.</skos:definition>
         <skos:example xml:lang="en">For example, the expansion of quicksilver is a stimulus that serves as a proxy for some temperature property. An increase or decrease in the velocity of spinning cups on a wind sensor is serving as a proxy for the wind speed.</skos:example>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/wasOriginatedBy -->
@@ -1910,10 +1910,10 @@
         <rdfs:label xml:lang="en">was originated by</rdfs:label>
         <skos:definition xml:lang="en">Relation between an Observation and the Stimulus that originated it.</skos:definition>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -1921,7 +1921,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#asGML -->
@@ -1947,7 +1947,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">asGML</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#asWKT -->
@@ -1973,7 +1973,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">asWKT</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#coordinateDimension -->
@@ -2001,7 +2001,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">coordinateDimension</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#dimension -->
@@ -2013,29 +2013,29 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      The topological dimension of this geometric object, which 
-      must be less than or equal to the coordinate dimension. 
-      In non-homogeneous collections, this will return the largest 
+      The topological dimension of this geometric object, which
+      must be less than or equal to the coordinate dimension.
+      In non-homogeneous collections, this will return the largest
       topological dimension of the contained objects.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      The topological dimension of this geometric object, which 
-      must be less than or equal to the coordinate dimension. 
-      In non-homogeneous collections, this will return the largest 
+      The topological dimension of this geometric object, which
+      must be less than or equal to the coordinate dimension.
+      In non-homogeneous collections, this will return the largest
       topological dimension of the contained objects.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">dimension</rdfs:label>
         <skos:definition xml:lang="en">
-      The topological dimension of this geometric object, which 
-      must be less than or equal to the coordinate dimension. 
-      In non-homogeneous collections, this will return the largest 
+      The topological dimension of this geometric object, which
+      must be less than or equal to the coordinate dimension.
+      In non-homogeneous collections, this will return the largest
       topological dimension of the contained objects.
     </skos:definition>
         <skos:prefLabel xml:lang="en">dimension</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#hasSerialization -->
@@ -2060,7 +2060,7 @@
     </skos:definition>
         <skos:prefLabel xml:lang="en">has serialization</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#isEmpty -->
@@ -2072,26 +2072,26 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      (true) if this geometric object is the empty Geometry. If 
-      true, then this geometric object represents the empty point 
+      (true) if this geometric object is the empty Geometry. If
+      true, then this geometric object represents the empty point
       set for the coordinate space.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      (true) if this geometric object is the empty Geometry. If 
-      true, then this geometric object represents the empty point 
+      (true) if this geometric object is the empty Geometry. If
+      true, then this geometric object represents the empty point
       set for the coordinate space.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">isEmpty</rdfs:label>
         <skos:definition xml:lang="en">
-      (true) if this geometric object is the empty Geometry. If 
-      true, then this geometric object represents the empty point 
+      (true) if this geometric object is the empty Geometry. If
+      true, then this geometric object represents the empty point
       set for the coordinate space.
     </skos:definition>
         <skos:prefLabel xml:lang="en">isEmpty</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#isSimple -->
@@ -2103,23 +2103,23 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      (true) if this geometric object has no anomalous geometric 
+      (true) if this geometric object has no anomalous geometric
       points, such as self intersection or self tangency.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      (true) if this geometric object has no anomalous geometric 
+      (true) if this geometric object has no anomalous geometric
       points, such as self intersection or self tangency.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">isSimple</rdfs:label>
         <skos:definition xml:lang="en">
-      (true) if this geometric object has no anomalous geometric 
+      (true) if this geometric object has no anomalous geometric
       points, such as self intersection or self tangency.
     </skos:definition>
         <skos:prefLabel xml:lang="en">isSimple</skos:prefLabel>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#spatialDimension -->
@@ -2131,121 +2131,121 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      The number of measurements or axes needed to describe the spatial position of 
+      The number of measurements or axes needed to describe the spatial position of
       this geometry in a coordinate system.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      The number of measurements or axes needed to describe the spatial position of 
+      The number of measurements or axes needed to describe the spatial position of
       this geometry in a coordinate system.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">spatialDimension</rdfs:label>
         <skos:definition xml:lang="en">
-      The number of measurements or axes needed to describe the spatial position of 
+      The number of measurements or axes needed to describe the spatial position of
       this geometry in a coordinate system.
     </skos:definition>
         <skos:prefLabel xml:lang="en">spatialDimension</skos:prefLabel>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasFrazioneCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasFrazioneCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Frazione"/>
+    <!-- http://ex.org/suedtirol#hasFrazioneCode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasFrazioneCode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Frazione"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasGeometryInWKT -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasGeometryInWKT"/>
-    
+    <!-- http://ex.org/suedtirol#hasGeometryInWKT -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasHouseNumber -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasHouseNumber"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasGeometryInWKT"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasID -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasID"/>
-    
+    <!-- http://ex.org/suedtirol#hasHouseNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasHouseNumber"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasIStatCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasIStatCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Municipality"/>
+    <!-- http://ex.org/suedtirol#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasID"/>
+
+
+
+    <!-- http://ex.org/suedtirol#hasIStatCode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasIStatCode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Municipality"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasPostcode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasPostcode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Address"/>
+    <!-- http://ex.org/suedtirol#hasPostcode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasPostcode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Address"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Street"/>
+    <!-- http://ex.org/suedtirol#hasStreetCode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasStreetCode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Street"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetName"/>
-    
+    <!-- http://ex.org/suedtirol#hasStreetName -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetSegmentID -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetSegmentID"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasStreetName"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmax -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmax"/>
-    
+    <!-- http://ex.org/suedtirol#hasStreetSegmentID -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmin -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmin"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasStreetSegmentID"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmax -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmax"/>
-    
+    <!-- http://ex.org/suedtirol#hasXmax -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmin -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmin"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasXmax"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#organizationType -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#organizationType"/>
-    
+    <!-- http://ex.org/suedtirol#hasXmin -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasXmin"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#provenance -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#provenance"/>
-    
+    <!-- http://ex.org/suedtirol#hasYmax -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasYmax"/>
+
+
+
+    <!-- http://ex.org/suedtirol#hasYmin -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasYmin"/>
+
+
+
+    <!-- http://ex.org/suedtirol#organizationType -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#organizationType"/>
+
+
+
+    <!-- http://ex.org/suedtirol#provenance -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#provenance"/>
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#notation -->
@@ -2256,7 +2256,7 @@
         <skos:definition xml:lang="en">A notation, also known as classification code, is a string of characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope of a given concept scheme.</skos:definition>
         <skos:scopeNote xml:lang="en">By convention, skos:notation is used with a typed literal in the object position of the triple.</skos:scopeNote>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/hasSimpleResult -->
@@ -2271,7 +2271,7 @@
         <skos:definition xml:lang="en">The simple value of an Observation or Actuation or act of Sampling.</skos:definition>
         <skos:example xml:lang="en">For instance, the values 23 or true.</skos:example>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/resultTime -->
@@ -2286,10 +2286,10 @@
         <rdfs:label xml:lang="en">result time</rdfs:label>
         <skos:definition xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</skos:definition>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -2297,13 +2297,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/vocommons/voaf#Vocabulary -->
 
     <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#Feature -->
@@ -2315,13 +2315,13 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      This class represents the top-level feature type. This class is 
-      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
       superclass of all feature types.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      This class represents the top-level feature type. This class is 
-      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
       superclass of all feature types.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
@@ -2329,13 +2329,13 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">Feature</rdfs:label>
         <skos:definition xml:lang="en">
-      This class represents the top-level feature type. This class is 
-      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
       superclass of all feature types.
     </skos:definition>
         <skos:prefLabel xml:lang="en">Feature</skos:prefLabel>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#Geometry -->
@@ -2346,13 +2346,13 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      The class represents the top-level geometry type. This class is 
-      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      The class represents the top-level geometry type. This class is
+      equivalent to the UML class GM_Object defined in ISO 19107, and
       it is superclass of all geometry types.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      The class represents the top-level geometry type. This class is 
-      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      The class represents the top-level geometry type. This class is
+      equivalent to the UML class GM_Object defined in ISO 19107, and
       it is superclass of all geometry types.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
@@ -2360,13 +2360,13 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">Geometry</rdfs:label>
         <skos:definition xml:lang="en">
-      The class represents the top-level geometry type. This class is 
-      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      The class represents the top-level geometry type. This class is
+      equivalent to the UML class GM_Object defined in ISO 19107, and
       it is superclass of all geometry types.
     </skos:definition>
         <skos:prefLabel xml:lang="en">Geometry</skos:prefLabel>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
@@ -2376,11 +2376,11 @@
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-16</dc:date>
         <dc:description xml:lang="en">
-      The class spatial-object represents everything that can have 
+      The class spatial-object represents everything that can have
       a spatial representation. It is superclass of feature and geometry.
     </dc:description>
         <rdfs:comment xml:lang="en">
-      The class spatial-object represents everything that can have 
+      The class spatial-object represents everything that can have
       a spatial representation. It is superclass of feature and geometry.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
@@ -2388,12 +2388,12 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
         <rdfs:label xml:lang="en">SpatialObject</rdfs:label>
         <skos:definition xml:lang="en">
-      The class spatial-object represents everything that can have 
+      The class spatial-object represents everything that can have
       a spatial representation. It is superclass of feature and geometry.
     </skos:definition>
         <skos:prefLabel xml:lang="en">SpatialObject</skos:prefLabel>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#AbstractCurveSegment -->
@@ -2403,7 +2403,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Abstract Curve Segment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#AbstractGeometricPrimitive -->
@@ -2413,7 +2413,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Abstract Geometric Primitive</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#AbstractGeometry -->
@@ -2423,7 +2423,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Abstract Geometry</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#AbstractGriddedSurface -->
@@ -2433,7 +2433,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Abstract Gridded Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#AbstractParametricCurveSurface -->
@@ -2443,7 +2443,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Abstract Parametric Curve Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#AbstractSurfacePatch -->
@@ -2453,7 +2453,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Abstract Surface Patch</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Arc -->
@@ -2463,7 +2463,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Arc</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#ArcByBulge -->
@@ -2473,7 +2473,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Arc by Bulge</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#ArcByCenterPoint -->
@@ -2483,7 +2483,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Arc by Center Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#ArcString -->
@@ -2493,7 +2493,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Arc String</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#ArcStringByBulge -->
@@ -2503,7 +2503,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Arc String by Bulge</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#BSpline -->
@@ -2513,7 +2513,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">BSpline</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Bezier -->
@@ -2523,7 +2523,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Bezier</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Circle -->
@@ -2533,7 +2533,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Circle</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#CircleByCenterPoint -->
@@ -2543,7 +2543,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">CircleByCenterPoint</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Clothoid -->
@@ -2553,7 +2553,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Clothoid</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Composite -->
@@ -2563,7 +2563,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Composite</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#CompositeCurve -->
@@ -2574,7 +2574,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Composite Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#CompositeSolid -->
@@ -2585,7 +2585,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Composite Solid</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#CompositeSurface -->
@@ -2596,7 +2596,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Composite Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Cone -->
@@ -2606,7 +2606,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Cone</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#CubicSpline -->
@@ -2616,7 +2616,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Cubic Spline</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Curve -->
@@ -2627,7 +2627,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Cylinder -->
@@ -2637,7 +2637,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Cylinder</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Geodesic -->
@@ -2647,7 +2647,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Geodesic</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#GeodesicString -->
@@ -2657,7 +2657,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Geodesic String</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#GeometricComplex -->
@@ -2667,7 +2667,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Geometric Complex</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#LineString -->
@@ -2677,7 +2677,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Line String</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#LineStringSegment -->
@@ -2687,7 +2687,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Line String Segment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#LinearRing -->
@@ -2697,7 +2697,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Linear Ring</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#MultiCurve -->
@@ -2707,7 +2707,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Multi-Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#MultiGeometry -->
@@ -2717,7 +2717,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Multi-Geometry</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#MultiPoint -->
@@ -2727,7 +2727,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Multi-Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#MultiSolid -->
@@ -2737,7 +2737,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Multi-Solid</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#MultiSurface -->
@@ -2747,7 +2747,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Multi-Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#OffsetCurve -->
@@ -2757,7 +2757,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Offset Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#OrientableCurve -->
@@ -2767,7 +2767,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Orientable Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#OrientableSurface -->
@@ -2777,7 +2777,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Orientable Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Point -->
@@ -2787,7 +2787,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Polygon -->
@@ -2797,7 +2797,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Polygon</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#PolygonPatch -->
@@ -2807,7 +2807,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Polygon Patch</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#PolyhedralSurface -->
@@ -2817,7 +2817,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Polyhedral Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#PolynomialSpline -->
@@ -2827,7 +2827,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Polynomial Spline</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Rectangle -->
@@ -2837,7 +2837,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Rectangle</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Ring -->
@@ -2847,7 +2847,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Ring</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Shell -->
@@ -2857,7 +2857,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Shell</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Solid -->
@@ -2867,7 +2867,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Solid</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Sphere -->
@@ -2877,7 +2877,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Sphere</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#SplineCurve -->
@@ -2887,7 +2887,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Spline Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Surface -->
@@ -2898,7 +2898,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Tin -->
@@ -2908,7 +2908,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Triangulated Irregular Network</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#Triangle -->
@@ -2918,7 +2918,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Triangle</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/gml#TriangulatedSurface -->
@@ -2928,7 +2928,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/gml"/>
         <rdfs:label xml:lang="en">Triangulated Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Curve -->
@@ -2949,7 +2949,7 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Geometry -->
@@ -2965,7 +2965,7 @@ All Geometry classes described in this specification are defined so that instanc
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Geometry</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#GeometryCollection -->
@@ -2980,7 +2980,7 @@ GeometryCollection places no other constraints on its elements. Subclasses of Ge
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Geometry Collection</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Line -->
@@ -2993,7 +2993,7 @@ A Line is a LineString with exactly 2 Points.
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Line</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#LineString -->
@@ -3006,7 +3006,7 @@ A LineString is a Curve with linear interpolation between Points. Each consecuti
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Line String</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#LinearRing -->
@@ -3019,7 +3019,7 @@ A LinearRing is a LineString that is both closed and simple.
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Linear Ring</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiCurve -->
@@ -3037,7 +3037,7 @@ A MultiCurve is defined as topologically closed.
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Multi Curve</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiLineString -->
@@ -3050,7 +3050,7 @@ A MultiLineString is a MultiCurve whose elements are LineStrings.
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Multi Line String</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiPoint -->
@@ -3066,7 +3066,7 @@ The boundary of a MultiPoint is the empty set.
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Multi Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiPolygon -->
@@ -3080,13 +3080,13 @@ a) The interiors of 2 Polygons that are elements of a MultiPolygon may not inter
 b) The boundaries of any 2 Polygons that are elements of a MultiPolygon may not cross and may touch at only a finite number of Points.
 c) A MultiPolygon is defined as topologically closed.
 d) A MultiPolygon may not have cut lines, spikes or punctures, a MultiPolygon is a regular closed Point set,
-e) The interior of a MultiPolygon with more than 1 Polygon is not connected; the number of connected components of the interior of a MultiPolygon is equal to the number of Polygons in the MultiPolygon. 
+e) The interior of a MultiPolygon with more than 1 Polygon is not connected; the number of connected components of the interior of a MultiPolygon is equal to the number of Polygons in the MultiPolygon.
 The boundary of a MultiPolygon is a set of closed Curves (LineStrings) corresponding to the boundaries of its element Polygons. Each Curve in the boundary of the MultiPolygon is in the boundary of exactly 1 element Polygon, and every Curve in the boundary of an element Polygon is in the boundary of the MultiPolygon.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Multi Polygon</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiSurface -->
@@ -3100,7 +3100,7 @@ A MultiSurface may be used to represent heterogeneous surfaces collections of po
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Multi Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Point -->
@@ -3108,14 +3108,14 @@ A MultiSurface may be used to represent heterogeneous surfaces collections of po
     <owl:Class rdf:about="http://www.opengis.net/ont/sf#Point">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
         <rdfs:comment xml:lang="en">
-A Point is a 0-dimensional geometric object and represents a single location in coordinate space. 
+A Point is a 0-dimensional geometric object and represents a single location in coordinate space.
 A Point has an x-coordinate value, a y-coordinate value. If called for by the associated Spatial Reference System, it may also have coordinate values for z and m.
 The boundary of a Point is the empty set.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Polygon -->
@@ -3136,7 +3136,7 @@ f) The exterior of a Polygon with 1 or more holes is not connected. Each hole de
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Polygon</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#PolyhedralSurface -->
@@ -3144,14 +3144,14 @@ f) The exterior of a Polygon with 1 or more holes is not connected. Each hole de
     <owl:Class rdf:about="http://www.opengis.net/ont/sf#PolyhedralSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Surface"/>
         <rdfs:comment xml:lang="en">
-A PolyhedralSurface is a contiguous collection of polygons, which share common boundary segments. For each pair of polygons that touch, the common boundary shall be expressible as a finite collection of LineStrings. Each such LineString shall be part of the boundary of at most 2 Polygon patches. 
+A PolyhedralSurface is a contiguous collection of polygons, which share common boundary segments. For each pair of polygons that touch, the common boundary shall be expressible as a finite collection of LineStrings. Each such LineString shall be part of the boundary of at most 2 Polygon patches.
 For any two polygons that share a common boundary, the top of the polygon shall be consistent. This means that when two LinearRings from these two Polygons traverse the common boundary segment, they do so in opposite directions. Since the Polyhedral surface is contiguous, all polygons will be thus consistently oriented. This means that a non-oriented surface (such as Mbius band) shall not have single surface representations. They may be represented by a MultiSurface.
 If each such LineString is the boundary of exactly 2 Polygon patches, then the PolyhedralSurface is a simple, closed polyhedron and is topologically isomorphic to the surface of a sphere. By the Jordan Surface Theorem (Jordans Theorem for 2-spheres), such polyhedrons enclose a solid topologically isomorphic to the interior of a sphere; the ball. In this case, the top of the surface will either point inward or outward of the enclosed finite solid. If outward, the surface is the exterior boundary of the enclosed surface. If inward, the surface is the interior of the infinite complement of the enclosed solid. A Ball with some number of voids (holes) inside can thus be presented as one exterior boundary shell, and some number in interior boundary shells.
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Polyhedral Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Surface -->
@@ -3168,7 +3168,7 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Surface</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#TIN -->
@@ -3181,7 +3181,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Triangulated Irregular Network</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Triangle -->
@@ -3194,313 +3194,313 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/sf"/>
         <rdfs:label xml:lang="en">Triangle</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Address -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Address">
+    <!-- http://ex.org/suedtirol#Address -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Address">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit">
+    <!-- http://ex.org/suedtirol#AdministrationUnit -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#AdministrationUnit">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Agency -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Agency">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Agency -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Agency">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Area -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Area">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Area -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Area">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#CentralService -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#CentralService">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#CentralService -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#CentralService">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Department -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Department">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Department -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Department">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#DirezioneDidattica -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#DirezioneDidattica">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution"/>
+    <!-- http://ex.org/suedtirol#DirezioneDidattica -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#DirezioneDidattica">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#EducationInstitution"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#District -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#District">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#District -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#District">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#School"/>
+    <!-- http://ex.org/suedtirol#EducationInstitution -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#EducationInstitution">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#School"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#External -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#External">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#External -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#External">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#FillingStation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#FillingStation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#FillingStation -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#FillingStation">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Frazione -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Frazione">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Frazione -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Frazione">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Grid -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Grid">
+    <!-- http://ex.org/suedtirol#Grid -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Grid">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Healthcare -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Healthcare">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#Healthcare -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Healthcare">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Intendenza -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Intendenza">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution"/>
+    <!-- http://ex.org/suedtirol#Intendenza -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Intendenza">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#EducationInstitution"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Interpolator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Interpolator">
+    <!-- http://ex.org/suedtirol#Interpolator -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Interpolator">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MaxTemperatureSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MaxTemperatureSensor">
+    <!-- http://ex.org/suedtirol#MaxTemperatureSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#MaxTemperatureSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MinTemperatureSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MinTemperatureSensor">
+    <!-- http://ex.org/suedtirol#MinTemperatureSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#MinTemperatureSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Municipality -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Municipality">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Municipality -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Municipality">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Museum -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Museum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Museum -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Museum">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Office -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Office">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Office -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Office">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#Organization -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Organization">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI">
+    <!-- http://ex.org/suedtirol#POI -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#POI">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Pharmacy -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Pharmacy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#Pharmacy -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Pharmacy">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationInterpolator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationInterpolator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Interpolator"/>
+    <!-- http://ex.org/suedtirol#PrecipitationInterpolator -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#PrecipitationInterpolator">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Interpolator"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationSensor">
+    <!-- http://ex.org/suedtirol#PrecipitationSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#PrecipitationSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Province -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Province">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Province -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Province">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Resort -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Resort">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Resort -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Resort">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#School -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#School">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#School -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#School">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Scuola -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Scuola">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution"/>
+    <!-- http://ex.org/suedtirol#Scuola -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Scuola">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#EducationInstitution"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#ServicePoint -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#ServicePoint">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#ServicePoint -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#ServicePoint">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Street -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Street">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Street -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Street">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficSpeedSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficSpeedSensor">
+    <!-- http://ex.org/suedtirol#TrafficSpeedSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#TrafficSpeedSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficStation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficStation">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    </owl:Class>
-    
+    <!-- http://ex.org/suedtirol#TrafficStation -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficVolumeSensor -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficVolumeSensor">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#UnclassifiedOrganization -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#UnclassifiedOrganization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#WeatherStation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#WeatherStation">
+    <owl:Class rdf:about="http://ex.org/suedtirol#TrafficStation">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
-    
+
+
+
+    <!-- http://ex.org/suedtirol#TrafficVolumeSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#TrafficVolumeSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- http://ex.org/suedtirol#UnclassifiedOrganization -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#UnclassifiedOrganization">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
+    </owl:Class>
+
+
+
+    <!-- http://ex.org/suedtirol#WeatherStation -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#WeatherStation">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+
 
 
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
 
     <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Collection -->
@@ -3513,7 +3513,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">A meaningful collection of concepts.</skos:definition>
         <skos:scopeNote xml:lang="en">Labelled collections can be used where you would like a set of concepts to be displayed under a &apos;node label&apos; in the hierarchy.</skos:scopeNote>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
@@ -3524,7 +3524,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <rdfs:label xml:lang="en">Concept</rdfs:label>
         <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
@@ -3536,7 +3536,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:example xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</skos:example>
         <skos:scopeNote xml:lang="en">A concept scheme may be defined to include concepts from different sources.</skos:scopeNote>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
@@ -3548,13 +3548,13 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">An ordered collection of concepts, where both the grouping and the ordering are meaningful.</skos:definition>
         <skos:scopeNote xml:lang="en">Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &apos;node label&apos;.</skos:scopeNote>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2006/time#TemporalEntity -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/ActuatableProperty -->
@@ -3573,7 +3573,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">An actuatable quality (property, characteristic) of a FeatureOfInterest.</skos:definition>
         <skos:example xml:lang="en">A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Actuation -->
@@ -3645,7 +3645,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator.</skos:definition>
         <skos:example xml:lang="en">The activity of automatically closing a window if the temperature in a room drops below 20 degree Celsius. The activity is the Actuation and the device that closes the window is the Actuator. The Procedure is the rule, plan, or specification that defines the conditions that triggers the Actuation, here a drop in temperature. </skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Actuator -->
@@ -3676,7 +3676,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world.</skos:definition>
         <skos:example xml:lang="en">A window actuator for automatic window control, i.e., opening or closing the window.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
@@ -3706,7 +3706,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</skos:definition>
         <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
@@ -3745,7 +3745,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</skos:definition>
         <skos:example xml:lang="en">The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Observation -->
@@ -3835,7 +3835,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</skos:definition>
         <skos:example xml:lang="en">The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Platform -->
@@ -3859,7 +3859,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</skos:definition>
         <skos:example xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Procedure -->
@@ -3890,7 +3890,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:example xml:lang="en">The measured wind speed differs depending on the height of the sensor above the surface, e.g., due to friction. Consequently, procedures for measuring wind speed define a standard height for anemometers above ground, typically 10m for meteorological measures and 2m in Agrometeorology. This definition of height, sensor placement, and so forth are defined by the Procedure.</skos:example>
         <skos:note xml:lang="en">Many observations may be created via the same Procedure, the same way as many tables are assembled using the same instructions (as information objects, not their concrete realization).</skos:note>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Result -->
@@ -3908,7 +3908,7 @@ A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of
         <skos:definition xml:lang="en">The Result of an Observation, Actuation, or act of Sampling. To store an observation&apos;s simple result value one can use the hasSimpleResult property.</skos:definition>
         <skos:example xml:lang="en">The value 20 as the height of a certain tree together with the unit, e.g., Meter.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Sample -->
@@ -3953,7 +3953,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <skos:example xml:lang="en">A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population.</skos:example>
         <skos:note xml:lang="en">A transient sample, such as a ships-track or flight-line, might be identified and described, but is unlikely to be revisited exactly.</skos:note>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Sampler -->
@@ -3978,7 +3978,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <skos:definition xml:lang="en">A device that is used by, or implements, a Sampling Procedure to create or transform one or more samples.</skos:definition>
         <skos:example xml:lang="en">A ball mill, diamond drill, hammer, hypodermic syringe and needle, image Sensor or a soil auger can all act as sampling devices (i.e., be Samplers). However, sometimes the distinction between the Sampler and the Sensor is not evident, as they are packaged as a unit. A Sampler need not be a physical device.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Sampling -->
@@ -4048,7 +4048,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <skos:example xml:lang="en">Splitting a piece of drill-core to create two new samples.</skos:example>
         <skos:example xml:lang="en">Taking a diamond-drill core from a rock outcrop.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/Sensor -->
@@ -4085,7 +4085,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</skos:definition>
         <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/Deployment -->
@@ -4115,7 +4115,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <skos:definition xml:lang="en">Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform.</skos:definition>
         <skos:example xml:lang="en">For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign.</skos:example>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/Input -->
@@ -4146,7 +4146,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:label xml:lang="en">Input</rdfs:label>
         <skos:definition xml:lang="en">Any information that is provided to a Procedure for its use.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/Output -->
@@ -4177,7 +4177,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:label xml:lang="en">Output</rdfs:label>
         <skos:definition xml:lang="en">Any information that is reported from a Procedure.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/Property -->
@@ -4194,7 +4194,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:label xml:lang="en">Property</rdfs:label>
         <skos:definition xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/Stimulus -->
@@ -4231,7 +4231,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:label xml:lang="en">Stimulus</rdfs:label>
         <skos:definition xml:lang="en">An event in the real world that &apos;triggers&apos; the Sensor. The properties associated to the Stimulus may be different to the eventual observed ObservableProperty. It is the event, not the object, that triggers the Sensor.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/System -->
@@ -4276,16 +4276,16 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:label xml:lang="en">System</rdfs:label>
         <skos:definition xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -4293,55 +4293,55 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficSpeed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficSpeed">
+    <!-- http://ex.org/suedtirol#dailyTrafficSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#dailyTrafficSpeed">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficVolume -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficVolume">
+    <!-- http://ex.org/suedtirol#dailyTrafficVolume -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#dailyTrafficVolume">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#gridPrecipitation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#gridPrecipitation">
+    <!-- http://ex.org/suedtirol#gridPrecipitation -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#gridPrecipitation">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#maxTemperature -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#maxTemperature">
+    <!-- http://ex.org/suedtirol#maxTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#maxTemperature">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#minTemperature -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#minTemperature">
+    <!-- http://ex.org/suedtirol#minTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#minTemperature">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#precipitation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#precipitation">
+    <!-- http://ex.org/suedtirol#precipitation -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#precipitation">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.w3.org/ns/sosa/ -->
@@ -4349,7 +4349,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/sosa/">
         <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.w3.org/ns/ssn/ -->
@@ -4373,10 +4373,10 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <foaf:name xml:lang="en">W3C/OGC Spatial Data on the Web Working Group</foaf:name>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations

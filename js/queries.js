@@ -1,4 +1,4 @@
-const qPrefix = "PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>\n" +
+const qPrefix = "PREFIX : <http://ex.org/suedtirol#>\n" +
     "PREFIX dc: <http://purl.org/dc/elements/1.1/>\n" +
     "PREFIX sf: <http://www.opengis.net/ont/sf#>\n" +
     "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +

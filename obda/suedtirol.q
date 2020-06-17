@@ -1,12 +1,12 @@
 [QueryItem="q2"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?address ?street_label ?district_label ?houseNum ?postcode
 WHERE {
 ?address geosparql:sfWithin ?district .
-?address :hasStreet ?street . 
+?address :hasStreet ?street .
 ?address :hasHouseNumber ?houseNum .
 ?address :hasPostcode ?postcode .
 ?street rdfs:label ?street_label .
@@ -19,9 +19,9 @@ LIMIT 100
 [QueryItem="q3"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT ?address ?street_label ?houseNum ?postcode 
+SELECT ?address ?street_label ?houseNum ?postcode
 WHERE {
 ?address :hasStreet ?street .
 ?address :hasHouseNumber ?houseNum .
@@ -34,7 +34,7 @@ LIMIT 100
 [QueryItem="q4"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?wkt
 WHERE {
@@ -44,9 +44,9 @@ WHERE {
 [QueryItem="q5"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT ?wkt 
+SELECT ?wkt
 WHERE {
 ?address a :Address ; :hasGeometryInWKT ?wkt.
 
@@ -55,7 +55,7 @@ LIMIT 100
 
 [QueryItem="qStreet"]
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT * WHERE {
@@ -66,9 +66,9 @@ LIMIT 100
 [QueryItem="qAddressInMunicipality"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT * 
+SELECT *
 WHERE {
 ?address a :Address .
 ?municipality a :Municipality .
@@ -80,9 +80,9 @@ LIMIT 100
 [QueryItem="qStreetAddressInMunicipality"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT * 
+SELECT *
 WHERE {
 ?address a :Address .
 ?municipality a :Municipality .
@@ -95,11 +95,11 @@ LIMIT 100
 [QueryItem="qSpecificStreet"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT ?municipalityName ?streetName  #?wkt 
+SELECT ?municipalityName ?streetName  #?wkt
 WHERE {
-?street a :Street ; 
+?street a :Street ;
  rdfs:label ?streetName ;
  :hasGeometryInWKT ?wkt ; :belongsToMunicipality ?munichpality ; :belongsToFrazione ?frazione .
 ?municipality :hasIStatCode 21008 .
@@ -113,9 +113,9 @@ LIMIT 100
 [QueryItem="qAddressOnStreet"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-#SELECT * 
+#SELECT *
 #WHERE {
 #?address a :Address ; :hasGeometryInWKT ?addressWKT ; :hasStreet ?street ; :hasStreetName "HEIDE"@it .
 #?street a :Street ; :hasGeometryInWKT ?streetWKT .
@@ -131,9 +131,9 @@ LIMIT 100
 [QueryItem="qAddressOnHeide"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT ?wkt 
+SELECT ?wkt
 WHERE {
 ?address a :Address ; :hasStreetName "HEIDE"@it ; :hasGeometryInWKT ?wkt.
 }
@@ -141,15 +141,15 @@ WHERE {
 [QueryItem="qAddressBolzano"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
-SELECT ?wkt 
+SELECT ?wkt
 #?streetName
 #?frazione ?municipality #
 WHERE {
- ?address a :Address ; :hasGeometryInWKT ?wkt ; 
-	:hasHouseNumber '4'; 
-	:belongsToMunicipality ?municipality ; 
+ ?address a :Address ; :hasGeometryInWKT ?wkt ;
+	:hasHouseNumber '4';
+	:belongsToMunicipality ?municipality ;
 	:belongsToFrazione ?frazione ;
 	:hasStreet ?street .
 #?frazione :hasFrazioneCode 1 .
@@ -160,7 +160,7 @@ WHERE {
 [QueryItem="qPharmacy"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
 SELECT *
 WHERE{
@@ -173,83 +173,83 @@ WHERE{
 [QueryItem="qAddressGeomNotIn"]
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?addressName ?wkt
 WHERE {
 ?address a :Address ; :hasGeometryInWKT ?wkt ; rdfs:label ?addressName ;
-  :belongsToMunicipality ?municipality.  
+  :belongsToMunicipality ?municipality.
 ?municipality a :Municipality ; rdfs:label 'Bolzano'@it .
 ?address geosparql:sfDisjoint ?municipality .
 FILTER (lang(?addressName) = 'it')
 }
 
 [QueryItem="qOrgnizationAddress"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT *
-WHERE 
+WHERE
 {
  ?oganization a :DirezioneDidattica .
-#; :hasAddress ?address . ?address :hasGeometryInWKT ?wkt. 
+#; :hasAddress ?address . ?address :hasGeometryInWKT ?wkt.
 }
 
 [QueryItem="qStreetWithPharmacyAndEducation"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt
-WHERE 
+WHERE
 {
-?oganization a :EducationInstitution ; :hasAddress ?organizationAddress . #?address :hasGeometryInWKT ?wkt. 
-?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress . #?address :hasGeometryInWKT ?wkt. 
+?oganization a :EducationInstitution ; :hasAddress ?organizationAddress . #?address :hasGeometryInWKT ?wkt.
+?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress . #?address :hasGeometryInWKT ?wkt.
 ?organizationAddress :hasStreet ?street.
 ?pharmacyAddress :hasStreet ?street.
-?street :hasGeometryInWKT ?wkt. 
+?street :hasGeometryInWKT ?wkt.
 }
 
 [QueryItem="educationInstitution"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt
-WHERE 
+WHERE
 {
- ?oganization a :EducationInstitution ; :hasAddress ?address . ?address :hasGeometryInWKT ?wkt. 
+ ?oganization a :EducationInstitution ; :hasAddress ?address . ?address :hasGeometryInWKT ?wkt.
 }
 
 [QueryItem="pharmacy"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT * WHERE
-{ 
-{?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress. 
+{
+{?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress.
 ?pharmacyAddress :hasGeometryInWKT ?wkt; :has. }
-UNION 
+UNION
 {?pharmacy a :Pharmacy ; :hasGeometryInWKT ?wkt.}
 }
 
 [QueryItem="pharmacyAddressOD"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
-{ 
-?pharmacy a :Pharmacy ; :provenance "OD"; :hasAddress ?pharmacyAddress. 
-?pharmacyAddress :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber. 
+{
+?pharmacy a :Pharmacy ; :provenance "OD"; :hasAddress ?pharmacyAddress.
+?pharmacyAddress :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
 
 [QueryItem="pharmacyAddressOSM"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
@@ -260,20 +260,20 @@ OPTIONAL {?pharmacy  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
 
 [QueryItem="School_OD"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
-{ 
-?school a :School ; :provenance "OD" ; :hasAddress ?schooolAddress. 
-?schooolAddress :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber. 
+{
+?school a :School ; :provenance "OD" ; :hasAddress ?schooolAddress.
+?schooolAddress :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
 
 [QueryItem="School_OSM"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
@@ -285,20 +285,20 @@ OPTIONAL {?school  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
 
 [QueryItem="Healthcare_OD"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
-{ 
-?healthcare a :Healthcare ; :provenance "OD"; :hasAddress ?address. 
-?address :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber. 
+{
+?healthcare a :Healthcare ; :provenance "OD"; :hasAddress ?address.
+?address :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
 
 [QueryItem="Healthcare_OSM"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
@@ -309,19 +309,19 @@ OPTIONAL {?healthcare  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
 
 [QueryItem="Fillingstations_OD"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
-{ 
-?fillingstation a :FillingStation ; :provenance "OD"; :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber. 
+{
+?fillingstation a :FillingStation ; :provenance "OD"; :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
 
 [QueryItem="Fillingstations_OSM"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
@@ -333,17 +333,17 @@ OPTIONAL {?fillingstation  :hasStreetName ?street; :hasHouseNumber ?houseNumber.
 }
 
 [QueryItem="Healthcare_OD_geom"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt WHERE
-{ 
+{
 ?healthcare a :Healthcare ; :provenance "OD";  :hasGeometryInWKT ?wkt .
 }
 
 [QueryItem="qAddressOutBolzano"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -358,11 +358,11 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT  ?wkt ?addressName
 WHERE {
-?address a :Address ; 
-  #:hasGeometryInWKT ?wkt ; 
+?address a :Address ;
+  #:hasGeometryInWKT ?wkt ;
   rdfs:label ?addressName ;
   geosparql:defaultGeometry ?geom ;
-  :belongsToMunicipality ?municipality.  
+  :belongsToMunicipality ?municipality.
 ?geom a sf:Point ;  geosparql:asWKT ?wkt .
 ?municipality a :Municipality ; rdfs:label 'Bolzano'@it .
 ?address geosparql:sfDisjoint ?municipality .
@@ -371,7 +371,7 @@ FILTER (lang(?addressName) = 'it')
 
 [QueryGroup="meteo"] @collection [[
 [QueryItem="qPrecipitation"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -388,7 +388,7 @@ PREFIX terms: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
-SELECT DISTINCT ?sensor  ?precipTime ?precipResult #?wkt 
+SELECT DISTINCT ?sensor  ?precipTime ?precipResult #?wkt
 WHERE{
 ?precip a sosa:Observation ; sosa:observedProperty :precipitation;
   sosa:hasSimpleResult ?precipResult; sosa:resultTime ?precipTime.
@@ -399,7 +399,7 @@ Filter(?precipTime = "2017-07-13T00:00:00"^^xsd:dateTime)
 }
 
 [QueryItem="qTrafficStation"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -416,14 +416,14 @@ PREFIX terms: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
-SELECT ?id ?wkt 
+SELECT ?id ?wkt
 WHERE{
 ?ts a :TrafficStation; :hasID ?id; geosparql:defaultGeometry ?geom.
 ?geom geosparql:asWKT ?wkt.
 }
 
 [QueryItem="qPrecipitationSensor"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -446,7 +446,7 @@ WHERE{
 }
 
 [QueryItem="qTrafficMeasures"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -473,7 +473,7 @@ Filter(?time = "2017-01-01T00:00:00Z"^^xsd:dateTime)
 }
 
 [QueryItem="qPrecipTrafficSpeed"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -490,7 +490,7 @@ PREFIX terms: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
-SELECT ?precipResult ?minTempResult ?speedResult ?precipTime 
+SELECT ?precipResult ?minTempResult ?speedResult ?precipTime
 WHERE{
 ?precip a sosa:Observation ; sosa:observedProperty :precipitation ; sosa:isObservedBy ?weatherSensor.
 ?precip sosa:hasSimpleResult ?precipResult; sosa:resultTime ?precipTime.
@@ -515,7 +515,7 @@ Filter(?speedTime = ?precipTime)
 }
 
 [QueryItem="qWeatherStation"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -542,7 +542,7 @@ WHERE{
 }
 
 [QueryItem="qWithinDistance"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -558,7 +558,7 @@ PREFIX vann: <http://purl.org/vocab/vann/>
 PREFIX terms: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
-PREFIX geof: <http://www.opengis.net/def/geosparql/function/> 
+PREFIX geof: <http://www.opengis.net/def/geosparql/function/>
 
 
 SELECT ?tsGeom  WHERE {
@@ -567,14 +567,14 @@ SELECT ?tsGeom  WHERE {
 #SELECT ?q ?dist WHERE {
 #?weatherStation a :WeatherStation; geosparql:defaultGeometry ?wsGeom.
 #BIND(geof:distance(?tsGeom, ?wsGeom) AS ?dist)
-#} 
+#}
 #ORDER BY ?dist
 #LIMIT 5
 #}
 }
 
 [QueryItem="qGrid"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -598,7 +598,7 @@ WHERE{
 }
 
 [QueryItem="qGridObservation"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -617,9 +617,9 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 
 SELECT  ?sensor
-#?precipResult) ?wkt ?time 
+#?precipResult) ?wkt ?time
 WHERE{
-?grid_precipitation a sosa:Observation; sosa:hasSimpleResult ?precipResult; 
+?grid_precipitation a sosa:Observation; sosa:hasSimpleResult ?precipResult;
 sosa:resultTime ?time; sosa:madeBySensor ?sensor.
 Filter(?time = "2017-01-04T00:00:00Z"^^xsd:dateTime)
 ?sensor sosa:observes :gridPrecipitation.
@@ -629,7 +629,7 @@ Filter(?time = "2017-01-04T00:00:00Z"^^xsd:dateTime)
 }
 
 [QueryItem="qTrafficStationInGrid"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -646,18 +646,18 @@ PREFIX terms: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
-SELECT ?ts 
-#?vValue 
-?sValue ?grid # ?pValue 
-#?pTime 
-?time 
+SELECT ?ts
+#?vValue
+?sValue ?grid # ?pValue
+#?pTime
+?time
 WHERE{
-?ts a :TrafficStation; :locatesInGrid ?grid;  sosa:hosts ?speed_sensor . #?volume_sensor. #, ?speed_sensor . 
+?ts a :TrafficStation; :locatesInGrid ?grid;  sosa:hosts ?speed_sensor . #?volume_sensor. #, ?speed_sensor .
 
-#?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume . 
+#?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume .
 #?volume  sosa:hasSimpleResult ?vValue; sosa:resultTime ?time.
 
-?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed . 
+?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed .
 ?speed  sosa:hasSimpleResult ?sValue; sosa:resultTime ?time.
 
 #?grid geosparql:defaultGeometry ?geom.
@@ -666,7 +666,7 @@ WHERE{
 
 #?grid sosa:hosts ?interpolator.
 #?interpolator sosa:madeObservation ?observation.
-#?observation sosa:observedProperty :gridPrecipitation ; 
+#?observation sosa:observedProperty :gridPrecipitation ;
 #	sosa:hasSimpleResult ?pValue; sosa:resultTime ?time.
 
 Filter(?time = "2017-01-04T00:00:00Z"^^xsd:dateTime)
@@ -674,7 +674,7 @@ Filter(?time = "2017-01-04T00:00:00Z"^^xsd:dateTime)
 }
 
 [QueryItem="qATrafficStation"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -693,25 +693,25 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 
 
-SELECT DISTINCT ?time ?vValue ?sValue ?pValue 
+SELECT DISTINCT ?time ?vValue ?sValue ?pValue
 WHERE{
-?ts a :TrafficStation; :hasID '23'; :locatesInGrid ?grid; sosa:hosts ?speed_sensor, ?volume_sensor. 
+?ts a :TrafficStation; :hasID '23'; :locatesInGrid ?grid; sosa:hosts ?speed_sensor, ?volume_sensor.
 
-?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume . 
+?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume .
 ?volume  sosa:hasSimpleResult ?vValue; sosa:resultTime ?time.
 
-?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed . 
+?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed .
 ?speed  sosa:hasSimpleResult ?sValue; sosa:resultTime ?time.
 
 ?grid sosa:hosts ?interpolator.
 ?interpolator sosa:madeObservation ?precip.
-?precip sosa:observedProperty :gridPrecipitation ; 
+?precip sosa:observedProperty :gridPrecipitation ;
 	sosa:hasSimpleResult ?pValue; sosa:resultTime ?time.
 }
 ORDER BY ?time
 
 [QueryItem="test"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -739,7 +739,7 @@ WHERE{
 ]]
 
 [QueryItem="qPrecipVolumeSpeedDateTemplate"]
-PREFIX : <http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#>
+PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -758,19 +758,19 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
-SELECT DISTINCT ?date ?vValue ?sValue ?pValue 
+SELECT DISTINCT ?date ?vValue ?sValue ?pValue
 WHERE{
-?ts a :TrafficStation; :hasID '%s'; :locatesInGrid ?grid; sosa:hosts ?speed_sensor, ?volume_sensor. 
+?ts a :TrafficStation; :hasID '%s'; :locatesInGrid ?grid; sosa:hosts ?speed_sensor, ?volume_sensor.
 
-?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume . 
+?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume .
 ?volume  sosa:hasSimpleResult ?vValue; sosa:resultTime ?date.
 
-?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed . 
+?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed .
 ?speed  sosa:hasSimpleResult ?sValue; sosa:resultTime ?date.
 
 ?grid sosa:hosts ?interpolator.
 ?interpolator sosa:madeObservation ?precip.
-?precip sosa:observedProperty :gridPrecipitation ; 
+?precip sosa:observedProperty :gridPrecipitation ;
 sosa:hasSimpleResult ?pValue; sosa:resultTime ?date.
 Filter(?date > "2017-06-30T00:00:00"^^xsd:dateTime)
 }

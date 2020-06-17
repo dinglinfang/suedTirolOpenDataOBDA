@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#"
-     xml:base="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2"
+<rdf:RDF xmlns="http://ex.org/suedtirol#"
+     xml:base="http://ex.org/suedtirol"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sf="http://www.opengis.net/ont/sf#"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
@@ -16,14 +16,14 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2">
+    <owl:Ontology rdf:about="http://ex.org/suedtirol">
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -31,40 +31,40 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToFrazione -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToFrazione"/>
-    
+    <!-- http://ex.org/suedtirol#belongsToFrazione -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToMunicipality -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#belongsToMunicipality"/>
-    
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#belongsToFrazione"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasAddress -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasAddress"/>
-    
+    <!-- http://ex.org/suedtirol#belongsToMunicipality -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreet -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreet"/>
-    
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#belongsToMunicipality"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#locatesInGrid -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#locatesInGrid"/>
-    
+    <!-- http://ex.org/suedtirol#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#hasAddress"/>
 
 
-    <!-- 
+
+    <!-- http://ex.org/suedtirol#hasStreet -->
+
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#hasStreet"/>
+
+
+
+    <!-- http://ex.org/suedtirol#locatesInGrid -->
+
+    <owl:ObjectProperty rdf:about="http://ex.org/suedtirol#locatesInGrid"/>
+
+
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -72,108 +72,108 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasFrazioneCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasFrazioneCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Frazione"/>
+    <!-- http://ex.org/suedtirol#hasFrazioneCode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasFrazioneCode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Frazione"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasGeometryInWKT -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasGeometryInWKT"/>
-    
+    <!-- http://ex.org/suedtirol#hasGeometryInWKT -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasHouseNumber -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasHouseNumber"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasGeometryInWKT"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasID -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasID"/>
-    
+    <!-- http://ex.org/suedtirol#hasHouseNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasHouseNumber"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasIStatCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasIStatCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Municipality"/>
+    <!-- http://ex.org/suedtirol#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasID"/>
+
+
+
+    <!-- http://ex.org/suedtirol#hasIStatCode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasIStatCode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Municipality"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasPostcode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasPostcode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Address"/>
+    <!-- http://ex.org/suedtirol#hasPostcode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasPostcode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Address"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Street"/>
+    <!-- http://ex.org/suedtirol#hasStreetCode -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasStreetCode">
+        <rdfs:domain rdf:resource="http://ex.org/suedtirol#Street"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetName"/>
-    
+    <!-- http://ex.org/suedtirol#hasStreetName -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetSegmentID -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasStreetSegmentID"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasStreetName"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmax -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmax"/>
-    
+    <!-- http://ex.org/suedtirol#hasStreetSegmentID -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmin -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasXmin"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasStreetSegmentID"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmax -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmax"/>
-    
+    <!-- http://ex.org/suedtirol#hasXmax -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmin -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#hasYmin"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasXmax"/>
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#organizationType -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#organizationType"/>
-    
+    <!-- http://ex.org/suedtirol#hasXmin -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#provenance -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#provenance"/>
-    
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasXmin"/>
 
 
-    <!-- 
+
+    <!-- http://ex.org/suedtirol#hasYmax -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasYmax"/>
+
+
+
+    <!-- http://ex.org/suedtirol#hasYmin -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#hasYmin"/>
+
+
+
+    <!-- http://ex.org/suedtirol#organizationType -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#organizationType"/>
+
+
+
+    <!-- http://ex.org/suedtirol#provenance -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.org/suedtirol#provenance"/>
+
+
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -181,310 +181,310 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Address -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Address">
+    <!-- http://ex.org/suedtirol#Address -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Address">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit">
+    <!-- http://ex.org/suedtirol#AdministrationUnit -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#AdministrationUnit">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Agency -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Agency">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Agency -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Agency">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Area -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Area">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Area -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Area">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#CentralService -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#CentralService">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#CentralService -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#CentralService">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Department -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Department">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Department -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Department">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#DirezioneDidattica -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#DirezioneDidattica">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution"/>
+    <!-- http://ex.org/suedtirol#DirezioneDidattica -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#DirezioneDidattica">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#EducationInstitution"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#District -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#District">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#District -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#District">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#School"/>
+    <!-- http://ex.org/suedtirol#EducationInstitution -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#EducationInstitution">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#School"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#External -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#External">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#External -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#External">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#FillingStation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#FillingStation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#FillingStation -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#FillingStation">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Frazione -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Frazione">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Frazione -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Frazione">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Grid -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Grid">
+    <!-- http://ex.org/suedtirol#Grid -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Grid">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Healthcare -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Healthcare">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#Healthcare -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Healthcare">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Intendenza -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Intendenza">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution"/>
+    <!-- http://ex.org/suedtirol#Intendenza -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Intendenza">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#EducationInstitution"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Interpolator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Interpolator">
+    <!-- http://ex.org/suedtirol#Interpolator -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Interpolator">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MaxTemperatureSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MaxTemperatureSensor">
+    <!-- http://ex.org/suedtirol#MaxTemperatureSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#MaxTemperatureSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MinTemperatureSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#MinTemperatureSensor">
+    <!-- http://ex.org/suedtirol#MinTemperatureSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#MinTemperatureSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Municipality -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Municipality">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Municipality -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Municipality">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Museum -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Museum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Museum -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Museum">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Office -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Office">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Office -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Office">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#Organization -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Organization">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI">
+    <!-- http://ex.org/suedtirol#POI -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#POI">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Pharmacy -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Pharmacy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#Pharmacy -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Pharmacy">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationInterpolator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationInterpolator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Interpolator"/>
+    <!-- http://ex.org/suedtirol#PrecipitationInterpolator -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#PrecipitationInterpolator">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Interpolator"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#PrecipitationSensor">
+    <!-- http://ex.org/suedtirol#PrecipitationSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#PrecipitationSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Province -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Province">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Province -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Province">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Resort -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Resort">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#Resort -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Resort">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#School -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#School">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#POI"/>
+    <!-- http://ex.org/suedtirol#School -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#School">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#POI"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Scuola -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Scuola">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#EducationInstitution"/>
+    <!-- http://ex.org/suedtirol#Scuola -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Scuola">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#EducationInstitution"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#ServicePoint -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#ServicePoint">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
+    <!-- http://ex.org/suedtirol#ServicePoint -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#ServicePoint">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Street -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Street">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#AdministrationUnit"/>
+    <!-- http://ex.org/suedtirol#Street -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#Street">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#AdministrationUnit"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficSpeedSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficSpeedSensor">
+    <!-- http://ex.org/suedtirol#TrafficSpeedSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#TrafficSpeedSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficStation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficStation">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    </owl:Class>
-    
+    <!-- http://ex.org/suedtirol#TrafficStation -->
 
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficVolumeSensor -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#TrafficVolumeSensor">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#UnclassifiedOrganization -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#UnclassifiedOrganization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#Organization"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#WeatherStation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#WeatherStation">
+    <owl:Class rdf:about="http://ex.org/suedtirol#TrafficStation">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!-- http://ex.org/suedtirol#TrafficVolumeSensor -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#TrafficVolumeSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- http://ex.org/suedtirol#UnclassifiedOrganization -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#UnclassifiedOrganization">
+        <rdfs:subClassOf rdf:resource="http://ex.org/suedtirol#Organization"/>
+    </owl:Class>
+
+
+
+    <!-- http://ex.org/suedtirol#WeatherStation -->
+
+    <owl:Class rdf:about="http://ex.org/suedtirol#WeatherStation">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+
+
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -492,52 +492,52 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficSpeed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficSpeed">
+    <!-- http://ex.org/suedtirol#dailyTrafficSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#dailyTrafficSpeed">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficVolume -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#dailyTrafficVolume">
+    <!-- http://ex.org/suedtirol#dailyTrafficVolume -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#dailyTrafficVolume">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#gridPrecipitation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#gridPrecipitation">
+    <!-- http://ex.org/suedtirol#gridPrecipitation -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#gridPrecipitation">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#maxTemperature -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#maxTemperature">
+    <!-- http://ex.org/suedtirol#maxTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#maxTemperature">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#minTemperature -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#minTemperature">
+    <!-- http://ex.org/suedtirol#minTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#minTemperature">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#precipitation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2#precipitation">
+    <!-- http://ex.org/suedtirol#precipitation -->
+
+    <owl:NamedIndividual rdf:about="http://ex.org/suedtirol#precipitation">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
 </rdf:RDF>

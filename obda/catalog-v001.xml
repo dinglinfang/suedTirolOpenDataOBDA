@@ -5,11 +5,11 @@
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.opengis.net/ont/geosparql" uri="library/geosparql.owl"/>
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.opengis.net/ont/gml" uri="library/gml.owl"/>
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.opengis.net/ont/sf" uri="library/sf.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2" uri="suedtirol.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://ex.org/suedtirol" uri="suedtirol.owl"/>
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.semanticweb.org/xiao/ontologies/2020/5/suedtirol" uri="suedtirol_merged.owl"/>
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.w3.org/2004/02/skos/core" uri="library/core.owl"/>
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.w3.org/ns/sosa/" uri="library/sosa.owl"/>
         <uri id="Automatically generated entry, Timestamp=1592386763026" name="http://www.w3.org/ns/ssn/" uri="library/ssn.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1592386763026" name="shadowed:http://www.semanticweb.org/ding/ontologies/2017/10/untitled-ontology-2" uri="library/suedtirol.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1592386763026" name="shadowed:http://ex.org/suedtirol" uri="library/suedtirol.owl"/>
     </group>
 </catalog>
