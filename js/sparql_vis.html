@@ -5,9 +5,10 @@
 
 <body>
 
-<div id="query" style="width: 800px; height: 600px">
-
-</div>
+<div id="query1" style="width: 800px; height: 100px"></div>
+<div id="query2" style="width: 800px; height: 200px"></div>
+<div id="query3" style="width: 800px; height: 400px"></div>
+<div id="query4" style="width: 800px; height: 600px"></div>
 
 <script type="text/javascript" src="../lib/vis/vis.js"></script>
 
@@ -15,7 +16,80 @@
 <script src="../lib/sparqljs/SparqlParser.js"></script>
 <script src="sparql_vis.js"></script>
 <script>
-    q = `PREFIX : <http://ex.org/suedtirol#>
+    q1 = `PREFIX : <http://ex.org/suedtirol#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obda: <https://w3id.org/obda/vocabulary#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX terms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+?s a sosa:Sensor .
+}`;
+    q2 = `PREFIX : <http://ex.org/suedtirol#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obda: <https://w3id.org/obda/vocabulary#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX terms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+?s a sosa:Sensor .
+?s sosa:isHostedBy ?p .
+?p geo:defaultGeometry ?g .
+?g geo:asWKT ?wkt .
+}`;
+    q3 = `PREFIX : <http://ex.org/suedtirol#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obda: <https://w3id.org/obda/vocabulary#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX terms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+?s a sosa:Sensor .
+?s sosa:isHostedBy ?p. ?p geo:defaultGeometry ?g . ?g geo:asWKT ?wkt .
+?s sosa:madeObservation ?o .  ?o sosa:hasSimpleResult ?v . ?o sosa:resultTime ?t .
+?o  sosa:observedProperty ?prop .
+  FILTER (?t >= '2017-01-01T00:00:00'^^xsd:dateTime)
+}`
+    ;
+
+
+    q4 = `PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sf: <http://www.opengis.net/ont/sf#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -36,12 +110,11 @@ PREFIX schema: <http://schema.org/>
 SELECT ?pName ?v ?t ?prop  WHERE {
   ?m a  :Municipality .
   ?m rdfs:label 'Bolzano'@it.
-  #?m  :hasGeometryInWKT ?mWkt .
   ?s a sosa:Sensor .
   ?s sosa:isHostedBy ?p.
-  ?p rdfs:label ?pName .
+  #?p rdfs:label ?pName .
   ?p geo:within ?m . ## <- unsupported yet
-  #?p geo:defaultGeometry ?g . ?g geo:asWKT ?pWkt .
+  ?p geo:defaultGeometry ?g . ?g geo:asWKT ?pWkt .
   ?s sosa:madeObservation ?o .
   ?o  sosa:observedProperty ?prop .
   ?o sosa:hasSimpleResult ?v . ?o sosa:resultTime ?t .
@@ -50,7 +123,10 @@ SELECT ?pName ?v ?t ?prop  WHERE {
   FILTER (LANG(?pName)='it')
   FILTER (geof:sfWithin(?pWkt, ?mWkt))
 }`
-    drawSparqlGraph(q, document.getElementById('query'))
+    drawSparqlGraph(q1, document.getElementById('query1'));
+    drawSparqlGraph(q2, document.getElementById('query2'));
+    drawSparqlGraph(q3, document.getElementById('query3'));
+    drawSparqlGraph(q4, document.getElementById('query4'));
 </script>
 </body>
 </html>
