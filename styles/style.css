@@ -70,6 +70,15 @@ td {
     font-size: small;
 }
 
+#tree {
+    font-family: 'Lucida Grande',serif;
+    font-size: small;
+}
+
+#tree > ul > li> a > i.jstree-icon.jstree-checkbox{
+    display:none;
+}
+
 
 #querySector input[type='checkbox'] {
     width: 20px;

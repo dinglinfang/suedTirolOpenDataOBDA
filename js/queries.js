@@ -21,7 +21,7 @@ const qMunicipalityLabeled = `${qPrefix}
 WHERE {
   ?municipality a :Municipality ;
     rdfs:label ?label_it ;
-    :hasGeometryInWKT ?wkt.
+    geo:asWKT ?wkt.
   FILTER (LANG(?label_it) = 'it')
 }`;
 
@@ -72,7 +72,7 @@ FILTER( lang(?street_de) = 'de')
 
 const qGrids = `${qPrefix}SELECT ?wkt
 WHERE{
-?grid a :Grid; :hasID ?gridID; :hasXmin ?xmin; :hasYmin ?ymin; geosparql:defaultGeometry ?geom.
+?grid a :GridCell; :hasID ?gridID; :hasXmin ?xmin; :hasYmin ?ymin; geosparql:defaultGeometry ?geom.
 ?geom geosparql:asWKT ?wkt.
 }`;
 
@@ -112,6 +112,8 @@ WHERE{
 ?interpolator sosa:madeObservation ?precip.
 ?precip sosa:observedProperty :gridPrecipitation ; 
 sosa:hasSimpleResult ?pValue; sosa:resultTime ?date.
-Filter(?date > "2017-06-30T00:00:00"^^xsd:dateTime)
+Filter(?date >= "2017-01-01T00:00:00"^^xsd:dateTime)
+Filter(?date < "2017-02-01T00:00:00"^^xsd:dateTime)
+#Filter(?date > "2017-06-30T00:00:00"^^xsd:dateTime)
 }
 ORDER BY ?date`;

@@ -51,6 +51,10 @@
     <link href="lib/multiple-select/multiple-select.css" rel="stylesheet"/>
     <script src="lib/multiple-select/multiple-select.js"></script>
 
+    <link rel="stylesheet" href="lib/jstree/themes/default/style.min.css"/>
+    <script src="lib/jstree/jstree.min.js"></script>
+
+
     <link href="styles/style.css" rel="stylesheet"/>
 
     <script>
@@ -60,6 +64,7 @@
         const ENDPOINT = "http://localhost:8080/sparql";
 
         const sparqlClient = new SPARQLClient(ENDPOINT);
+
 
         //------------------------------------------------------------------------------------------------------------------
         function addFeatures(resp, params) {
@@ -126,6 +131,29 @@
                 gutterSize: 8,
                 cursor: 'row-resize'
             });
+
+
+            // $('#jstree_demo_div')
+            //     .jstree()
+            //     .bind("loaded.jstree", function (event, data) {
+            //         $(this).jstree("open_all");
+            //     });
+
+
+            $("#tree").bind("loaded.jstree", function (event, data) {
+                data.instance.open_all();
+            });
+            $("#tree").jstree(
+                {
+                    "core": {
+                        "themes": {
+                            "icons": false
+                        }
+                    },
+                    "plugins": ["checkbox"]
+                }
+            );
+
             //------------------------------------------------------------------------------------------------------------------
             //base map
             const overlayLayerGroup = new ol.layer.Group({
@@ -178,8 +206,7 @@
             allLayers.forEach(l => overlayLayerGroup.getLayers().push(l));
 
             //const
-                layers = [precipitationLayer, weatherstationLayer, trafficstationLayer];
-
+            layers = [precipitationLayer, weatherstationLayer, trafficstationLayer];
 
 
             sparqlClient.execute(qMunicipalityLabeled)
@@ -272,7 +299,7 @@
                         } else {
                             $("#tabs-1-info").html("");
                             $("#tabs-2-info").html("");
-                        //if (data.length > 0) {
+                            //if (data.length > 0) {
 
                             //basic info
                             $("#tabs-0").html(`<table>
@@ -338,7 +365,6 @@
                     });
                 }
             });
-
 
 
             const qMunicipality = `${qPrefix}SELECT *
@@ -476,98 +502,65 @@
     <!--style="position: absolute; left:0px; top:0px; height: 40%; width: 30%; margin: 12px "-->
     <div id="querySector" class="split content">
         <fieldset id="queries" style="border: 1px; border-style: solid; border-color: #9f9f9f; height: 100%;">
-            <legend style="margin-left: 10px">Data Access</legend>
+            <legend style="margin-left: 10px">Data Access and Analysis</legend>
 
-            <!--<select multiple="multiple" name="regions" id="regions" style="width: 200px"></select>-->
-
-            <ol id="tasks" class="one" style="padding: 0px 20px">
-                <li>
-                    <ul> <img src="icons/map.png" width="16px" height="16px" alt="submit"/>  <span> Sensor Data Access </span>
-                        <li> <input type="checkbox"/> <span> Weather Data</span>
-                            <!--<ol style="list-style-type: none;">-->
-                            <ul style="padding-left: 15px">
-                                <li>
-                                    <button type="button" style="border: 1px; background: transparent"
-                                            onclick="qWeatherStationFunction()">
-                                        <img src="icons/map.png" width="16px" height="16px" alt="submit"/> <span>Stations</span>
-                                    </button>
-
-                                </li>
-                                <li><span>Sensors:</span> <input type="checkbox"/><span>min temperature</span>
-
-                                        <input type="checkbox"/><span>max temperature</span>
-                                        <input type="checkbox"/><span>precipitation</span>
-                                </li>
-
-                                <ul style="padding-left: 15px; list-style-type: none">
+            <div id="tree">
+                <ul>
+                    <li><b>Data Access</b>
+                        <ul>
+                            <li>Stations
+                                <ul>
                                     <li>
-                                        <div>
-                                            <button type="button" style="border: 1px; background: transparent"
-                                                    onclick="qWeatherStationFunction()">
-                                                <img src="icons/map.png" width="16px" height="16px" alt="submit"/>
-                                                <span>Raw data on</span>
-<!--                                                <input id="weatherDate" type="date" value="2017-01-01"-->
-<!--                                                                                min="2017-01-01"-->
-<!--                                                                                max="2017-07-31">-->
-                                            </button>
-
-                                        </div>
+                                        Weather Stations [<input type="radio" checked> raw <input type="radio">
+                                        interpolated]
+                                        <ul>
+                                            <li>
+                                                Min Temperature Sensor
+                                            </li>
+                                            <li>
+                                                Max Temperature Sensor
+                                            </li>
+                                            <li>
+                                                Precipitation Sensor
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div>
-                                            <button type="button" style="border: 1px; background: transparent"
-                                                    onclick="qGridsPrecipitation()">
-                                                <img src="icons/map.png" width="16px" height="16px" alt="submit"/> <span>Interpolated
-                                                surface on</span> <input id="precipDate" type="date" value="2017-01-01"
-                                                                         min="2017-01-01" max="2017-07-31">
-                                            </button>
-                                        </div>
+                                        Traffic Stations
+                                        <ul>
+                                            <li>Volume Sensor</li>
+                                            <li> Speed Sensor</li>
+                                        </ul>
                                     </li>
                                 </ul>
-                            </ul>
-                        </li>
+                            </li>
 
-                        <li> <input type="checkbox"/> <span>Traffic Data</span>
-                            <ul style="padding-left: 15px">
-                                <li>
-                                    <button type="button" style="border: 1px; background: transparent"
-                                            onclick="qTrafficStationFunction()">
-                                        <img src="icons/map.png" width="16px" height="16px" alt="submit"/> <span>Stations</span>
-                                    </button>
+                            <li>Dates
+                                <ul>
+                                    <li><label> <input type="date" value="2017-01-01"></label> - <label> <input
+                                            type="date"
+                                            value="2017-01-01"></label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Regions
+                                <ul>
+                                    <li> All</li>
+                                    <li> Bolzano-Bozen</li>
+                                    <li> Merano-Meran</li>
+                                    <li> Bressanone-Brixen</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Analysis</b>
+                        <ul>
+                            <li>Pearson Correlation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-                                </li>
-                                <li><span>Sensors: </span> <input type="checkbox"/><span>volume</span><input
-                                        type="checkbox"/><span>speed</span>
-                                    <ul style="padding-left: 15px; list-style-type: none">
-                                        <li>
-                                            <button type="button" style="border: 1px; background: transparent"
-                                                    onclick="qWeatherStationFunction()">
-                                                <img src="icons/map.png" width="16px" height="16px" alt="submit"/>
-                                                <span>Raw data on</span> <input id="trafficDate" type="date" value="2017-01-01"
-                                                                                min="2017-01-01"
-                                                                                max="2017-07-31">
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <button type="button" style="border: 1px; background: transparent"
-                             onclick="qTrafficStationFunction()"
-                             title="Click one traffic station on the map, and explore the correlations between traffics and weather at this station.">
-                    <img src="icons/map.png" width="16px" height="16px" alt="submit"/>
-                    <span>
-<!--                        Weather and Traffic data -->
-                        Correlation exploration </span>
-                </button>
-                </li>
-            </ol>
 
         </fieldset>
     </div>

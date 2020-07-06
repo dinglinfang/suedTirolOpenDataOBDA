@@ -9,6 +9,8 @@
 <div id="query2" style="width: 800px; height: 200px"></div>
 <div id="query3" style="width: 800px; height: 400px"></div>
 <div id="query4" style="width: 800px; height: 600px"></div>
+<div id="query5" style="width: 800px; height: 800px"></div>
+<div id="query6" style="width: 1000px; height: 1000px"></div>
 
 <script type="text/javascript" src="../lib/vis/vis.js"></script>
 
@@ -122,11 +124,87 @@ SELECT ?pName ?v ?t ?prop  WHERE {
   FILTER (?t <= '2017-01-31T00:00:00'^^xsd:dateTime)
   FILTER (LANG(?pName)='it')
   FILTER (geof:sfWithin(?pWkt, ?mWkt))
-}`
+}`;
+    q5 = `
+    PREFIX : <http://ex.org/suedtirol#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obda: <https://w3id.org/obda/vocabulary#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX terms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+SELECT DISTINCT ?date ?vValue ?sValue ?pValue
+WHERE{
+?ts a :TrafficStation; :hasID '3'; :locatesInGrid ?grid; sosa:hosts ?speed_sensor, ?volume_sensor.
+?volume_sensor a :TrafficVolumeSensor ; sosa:madeObservation ?volume .
+?volume  sosa:hasSimpleResult ?vValue; sosa:resultTime ?date.
+
+?speed_sensor a :TrafficSpeedSensor ; sosa:madeObservation ?speed .
+?speed  sosa:hasSimpleResult ?sValue; sosa:resultTime ?date.
+
+?grid sosa:hosts ?interpolator.
+?interpolator sosa:madeObservation ?precip.
+?precip sosa:observedProperty :gridPrecipitation ;
+sosa:hasSimpleResult ?pValue; sosa:resultTime ?date.
+#Filter(?date > "2017-06-30T00:00:00"^^xsd:dateTime)
+Filter(?date >= "2017-01-01T00:00:00"^^xsd:dateTime)
+Filter(?date < "2017-02-01T00:00:00"^^xsd:dateTime)
+}
+ORDER BY ?date`
+
+    q6=`
+BASE <http://ex.org/data/>
+PREFIX : <http://ex.org/suedtirol#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obda: <https://w3id.org/obda/vocabulary#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX terms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT * {
+    <traffic_station/3> a :TrafficStation, sosa:Platform ;
+   :hasID '3' ;
+   rdfs:label "Pineta di Laives"@it ;
+   rdfs:label "Steinmannwald"@de ;
+   sosa:hosts <traffic_volume_sensor/3/dailyTrafficVolume> ;
+   sosa:hosts <traffic_speed_sensor/3/dailyTrafficSpeed>.
+   <traffic_volume_sensor/3/dailyTrafficVolume> a :TrafficVolumeSensor, sosa:Sensor .
+    <traffic_station/3> geo:defaultGeometry <traffic_station_geom/3>.
+    <traffic_station_geom/3> a sf:Point; geo:asWKT "POINT(680089.9 5146685.9)".
+    <traffic_volume_sensor/3/dailyTrafficVolume> sosa:madeObservation
+    <obs_traffic_volume/3/2017-01-01>.
+    <obs_traffic_volume/3/2017-01-01> a sosa:Observation ;
+   sosa:observedProperty <dailyTrafficVolume> ;
+   sosa:hasSimpleResult 11771 ;
+   sosa:resultTime "2017-01-01".
+   }
+`
+
     drawSparqlGraph(q1, document.getElementById('query1'));
     drawSparqlGraph(q2, document.getElementById('query2'));
     drawSparqlGraph(q3, document.getElementById('query3'));
     drawSparqlGraph(q4, document.getElementById('query4'));
+    drawSparqlGraph(q5, document.getElementById('query5'));
+    drawSparqlGraph(q6, document.getElementById('query6'));
 </script>
 </body>
 </html>

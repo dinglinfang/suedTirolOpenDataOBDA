@@ -1,5 +1,6 @@
 const Parser = SparqlParser.Parser;
 Parser.options = {};
+
 const parser = new Parser();
 
 

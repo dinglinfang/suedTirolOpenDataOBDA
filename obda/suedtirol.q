@@ -38,7 +38,7 @@ PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?wkt
 WHERE {
-?district a :District ; :hasGeometryInWKT ?wkt.
+?district a :District ; geo:asWKT ?wkt.
 }
 
 [QueryItem="q5"]
@@ -48,7 +48,7 @@ PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?wkt
 WHERE {
-?address a :Address ; :hasGeometryInWKT ?wkt.
+?address a :Address ; geo:asWKT ?wkt.
 
 }
 LIMIT 100
@@ -59,7 +59,7 @@ PREFIX : <http://ex.org/suedtirol#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT * WHERE {
-?street a :Street ; rdfs:label ?l; :hasGeometryInWKT ?wkt.
+?street a :Street ; rdfs:label ?l; geo:asWKT ?wkt.
 }
 LIMIT 100
 
@@ -88,7 +88,7 @@ WHERE {
 ?municipality a :Municipality .
 ?address geosparql:sfWithin ?municipality .
 ?address :hasStreet ?street .
-?street :hasGeometryInWKT ?wkt.
+?street geo:asWKT ?wkt.
 }
 LIMIT 100
 
@@ -101,7 +101,7 @@ SELECT ?municipalityName ?streetName  #?wkt
 WHERE {
 ?street a :Street ;
  rdfs:label ?streetName ;
- :hasGeometryInWKT ?wkt ; :belongsToMunicipality ?munichpality ; :belongsToFrazione ?frazione .
+ geo:asWKT ?wkt ; :belongsToMunicipality ?munichpality ; :belongsToFrazione ?frazione .
 ?municipality :hasIStatCode 21008 .
 ?municipality rdfs:label ?municipalityName .
 ?frazione :hasFrazioneCode 3 .
@@ -117,14 +117,14 @@ PREFIX : <http://ex.org/suedtirol#>
 
 #SELECT *
 #WHERE {
-#?address a :Address ; :hasGeometryInWKT ?addressWKT ; :hasStreet ?street ; :hasStreetName "HEIDE"@it .
-#?street a :Street ; :hasGeometryInWKT ?streetWKT .
+#?address a :Address ; geo:asWKT ?addressWKT ; :hasStreet ?street ; :hasStreetName "HEIDE"@it .
+#?street a :Street ; geo:asWKT ?streetWKT .
 #}
 #LIMIT 100
 
 SELECT  *
 WHERE {
-?street a :Street ; rdfs:label "HEIDE"@it ; :hasGeometryInWKT ?streetWKT .
+?street a :Street ; rdfs:label "HEIDE"@it ; geo:asWKT ?streetWKT .
 }
 LIMIT 100
 
@@ -135,7 +135,7 @@ PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?wkt
 WHERE {
-?address a :Address ; :hasStreetName "HEIDE"@it ; :hasGeometryInWKT ?wkt.
+?address a :Address ; :hasStreetName "HEIDE"@it ; geo:asWKT ?wkt.
 }
 
 [QueryItem="qAddressBolzano"]
@@ -147,7 +147,7 @@ SELECT ?wkt
 #?streetName
 #?frazione ?municipality #
 WHERE {
- ?address a :Address ; :hasGeometryInWKT ?wkt ;
+ ?address a :Address ; geo:asWKT ?wkt ;
 	:hasHouseNumber '4';
 	:belongsToMunicipality ?municipality ;
 	:belongsToFrazione ?frazione ;
@@ -166,7 +166,7 @@ SELECT *
 WHERE{
 ?pharmacy a :Pharmacy ; rdfs:label ?pharmacyName ;
   :hasAddress ?address ; :belongsToMunicipality ?municipality.
-?address :hasGeometryInWKT ?wkt .
+?address geo:asWKT ?wkt .
 ?municipality rdfs:label "Bolzano"@it .
 }
 
@@ -177,7 +177,7 @@ PREFIX : <http://ex.org/suedtirol#>
 
 SELECT ?addressName ?wkt
 WHERE {
-?address a :Address ; :hasGeometryInWKT ?wkt ; rdfs:label ?addressName ;
+?address a :Address ; geo:asWKT ?wkt ; rdfs:label ?addressName ;
   :belongsToMunicipality ?municipality.
 ?municipality a :Municipality ; rdfs:label 'Bolzano'@it .
 ?address geosparql:sfDisjoint ?municipality .
@@ -193,7 +193,7 @@ SELECT *
 WHERE
 {
  ?oganization a :DirezioneDidattica .
-#; :hasAddress ?address . ?address :hasGeometryInWKT ?wkt.
+#; :hasAddress ?address . ?address geo:asWKT ?wkt.
 }
 
 [QueryItem="qStreetWithPharmacyAndEducation"]
@@ -204,11 +204,11 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT ?wkt
 WHERE
 {
-?oganization a :EducationInstitution ; :hasAddress ?organizationAddress . #?address :hasGeometryInWKT ?wkt.
-?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress . #?address :hasGeometryInWKT ?wkt.
+?oganization a :EducationInstitution ; :hasAddress ?organizationAddress . #?address geo:asWKT ?wkt.
+?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress . #?address geo:asWKT ?wkt.
 ?organizationAddress :hasStreet ?street.
 ?pharmacyAddress :hasStreet ?street.
-?street :hasGeometryInWKT ?wkt.
+?street geo:asWKT ?wkt.
 }
 
 [QueryItem="educationInstitution"]
@@ -219,7 +219,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT ?wkt
 WHERE
 {
- ?oganization a :EducationInstitution ; :hasAddress ?address . ?address :hasGeometryInWKT ?wkt.
+ ?oganization a :EducationInstitution ; :hasAddress ?address . ?address geo:asWKT ?wkt.
 }
 
 [QueryItem="pharmacy"]
@@ -230,9 +230,9 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT * WHERE
 {
 {?pharmacy a :Pharmacy ; :hasAddress ?pharmacyAddress.
-?pharmacyAddress :hasGeometryInWKT ?wkt; :has. }
+?pharmacyAddress geo:asWKT ?wkt; :has. }
 UNION
-{?pharmacy a :Pharmacy ; :hasGeometryInWKT ?wkt.}
+{?pharmacy a :Pharmacy ; geo:asWKT ?wkt.}
 }
 
 [QueryItem="pharmacyAddressOD"]
@@ -243,7 +243,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
 {
 ?pharmacy a :Pharmacy ; :provenance "OD"; :hasAddress ?pharmacyAddress.
-?pharmacyAddress :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
+?pharmacyAddress geo:asWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
@@ -255,7 +255,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt ?street ?houseNumber WHERE
 {
-?pharmacy a :Pharmacy ; :provenance "OSM" ;  :hasGeometryInWKT ?wkt .
+?pharmacy a :Pharmacy ; :provenance "OSM" ;  geo:asWKT ?wkt .
 OPTIONAL {?pharmacy  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
 
@@ -267,7 +267,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
 {
 ?school a :School ; :provenance "OD" ; :hasAddress ?schooolAddress.
-?schooolAddress :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
+?schooolAddress geo:asWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
@@ -279,7 +279,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt ?street ?houseNumber WHERE
 {
-?school a :School ; :provenance "OSM" ;  :hasGeometryInWKT ?wkt .
+?school a :School ; :provenance "OSM" ;  geo:asWKT ?wkt .
 #?school  :hasStreetName ?street; :hasHouseNumber ?houseNumber.
 OPTIONAL {?school  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
@@ -292,7 +292,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
 {
 ?healthcare a :Healthcare ; :provenance "OD"; :hasAddress ?address.
-?address :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
+?address geo:asWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
@@ -304,7 +304,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt ?street ?houseNumber WHERE
 {
-?healthcare a :Healthcare ;  :provenance "OSM" ;  :hasGeometryInWKT ?wkt .
+?healthcare a :Healthcare ;  :provenance "OSM" ;  geo:asWKT ?wkt .
 OPTIONAL {?healthcare  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
 
@@ -315,7 +315,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE
 {
-?fillingstation a :FillingStation ; :provenance "OD"; :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
+?fillingstation a :FillingStation ; :provenance "OD"; geo:asWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber.
 FILTER (LANG(?street_de) = 'de')
 FILTER (LANG(?street_it) = 'it')
 }
@@ -327,7 +327,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt ?street ?houseNumber WHERE
 {
-?fillingstation a :FillingStation ; :provenance "OSM" ;  :hasGeometryInWKT ?wkt .
+?fillingstation a :FillingStation ; :provenance "OSM" ;  geo:asWKT ?wkt .
 #?fillingstation  :hasStreetName ?street; :hasHouseNumber ?houseNumber.
 OPTIONAL {?fillingstation  :hasStreetName ?street; :hasHouseNumber ?houseNumber.}
 }
@@ -339,7 +339,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT DISTINCT ?wkt WHERE
 {
-?healthcare a :Healthcare ; :provenance "OD";  :hasGeometryInWKT ?wkt .
+?healthcare a :Healthcare ; :provenance "OD";  geo:asWKT ?wkt .
 }
 
 [QueryItem="qAddressOutBolzano"]
@@ -359,7 +359,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT  ?wkt ?addressName
 WHERE {
 ?address a :Address ;
-  #:hasGeometryInWKT ?wkt ;
+  #geo:asWKT ?wkt ;
   rdfs:label ?addressName ;
   geosparql:defaultGeometry ?geom ;
   :belongsToMunicipality ?municipality.
@@ -593,7 +593,7 @@ PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?wkt
 WHERE{
-?grid a :Grid; :hasID ?gridID; :hasXmin ?xmin; :hasYmin ?ymin; geosparql:defaultGeometry ?geom.
+?grid a :GridCell; :hasID ?gridID; :hasXmin ?xmin; :hasYmin ?ymin; geosparql:defaultGeometry ?geom.
 ?geom geosparql:asWKT ?wkt.
 }
 

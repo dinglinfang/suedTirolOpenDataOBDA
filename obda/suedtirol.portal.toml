@@ -6,7 +6,7 @@ name="Sensor Analysis"
 
 [[tabGroups.tabs]]
 
-name="sensors in Bolanoz and their observations"
+name="sensors in Bolanzo and their observations"
 query="""
 PREFIX : <http://ex.org/suedtirol#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -29,11 +29,12 @@ PREFIX schema: <http://schema.org/>
 SELECT ?pName ?v ?t ?prop  WHERE {
   ?m a  :Municipality .
   ?m rdfs:label 'Bolzano'@it.
-  ?m  :hasGeometryInWKT ?mWkt .
+  ?m geo:asWKT ?mWkt .
   ?s a sosa:Sensor .
   ?s sosa:isHostedBy ?p.
   ?p rdfs:label ?pName .
-  ?p geo:defaultGeometry ?g . ?g geo:asWKT ?pWkt .
+  ?p geo:defaultGeometry ?g .
+  ?g geo:asWKT ?pWkt .
   FILTER (LANG(?pName)='it')
   FILTER (geof:sfWithin(?pWkt, ?mWkt))
   ?s sosa:madeObservation ?o .

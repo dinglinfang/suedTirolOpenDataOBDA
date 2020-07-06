@@ -2,13 +2,13 @@ function compareODandOSM_SPARQL(POItype) {
     const qODdata = qPrefix + "SELECT DISTINCT ?wkt ?street_de ?street_it ?houseNumber WHERE\n" +
         "{ \n" +
         "?poi a :" + POItype + " ; :provenance \"OD\"; :hasAddress ?address. \n" +
-        "?address :hasGeometryInWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber. \n" +
+        "?address geo:asWKT ?wkt; :hasStreetName ?street_de, ?street_it; :hasHouseNumber ?houseNumber. \n" +
         "FILTER (LANG(?street_de) = 'de')\n" +
         "FILTER (LANG(?street_it) = 'it')\n" +
         "}";
     const qOSMdata = qPrefix + "SELECT ?wkt ?street ?houseNumber WHERE\n" +
         "{\n" +
-        "?poi a :" + POItype + " ; :provenance \"OSM\"; :hasGeometryInWKT ?wkt .\n" +
+        "?poi a :" + POItype + " ; :provenance \"OSM\"; geo:asWKT ?wkt .\n" +
         "OPTIONAL {?poi :hasStreetName ?street; :hasHouseNumber ?houseNumber.}\n" +
         "}";
 

@@ -94,7 +94,7 @@ function gridInterpolation() {
 
     const qGrids = qPrefix + "SELECT ?gridID ?wkt ?xmin ?ymin \n" +
         "WHERE{\n" +
-        "?grid a :Grid; :hasID ?gridID; :hasXmin ?xmin; :hasYmin ?ymin; " +
+        "?grid a :GridCell; :hasID ?gridID; :hasXmin ?xmin; :hasYmin ?ymin; " +
         "geosparql:defaultGeometry ?geom.\n" +
         "?geom geosparql:asWKT ?wkt.\n" +
         "}";
