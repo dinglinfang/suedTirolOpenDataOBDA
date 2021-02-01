@@ -25,7 +25,7 @@ We can also setup each component separately:
 
 #### Setup database
 
-  Assume that you have already installed PostgreSQL and the PostGIS extension.
+  Assume that we have already installed PostgreSQL and the PostGIS extension.
 
   Import the test data in the [db/sql](db/sql) directory into a PostgreSQL database.
 
@@ -45,7 +45,7 @@ $ psql -U <username>
 
 #### Install Ontop Endpoint
 
-  Deploy the Ontop SPARQL endpoint using the files in the [obda](obda) directory. 
+  Deploy the Ontop SPARQL endpoint using the files in the [ontop](ontop) directory. 
   
 
 1. Download and unzip the Ontop CLI bundle [ontop-cli-4.0.3.zip](https://sourceforge.net/projects/ontop4obda/files/ontop-4.0.3/)
@@ -60,7 +60,7 @@ $  ~/opt/ontop-cli-4.0.3/ontop endpoint --cors-allowed-origins='*' -t suedtirol.
 
 #### Start the web server for our app
 
-* You can use any server, for instance, using python
+* We can use any server, for instance, using python
 ```
 $ python3 -m http.server
 ```
